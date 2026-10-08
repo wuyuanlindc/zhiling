@@ -1,0 +1,4 @@
+@import "tailwindcss";
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; min-height: 100%; }
+body { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; background: #edf1f2; }
