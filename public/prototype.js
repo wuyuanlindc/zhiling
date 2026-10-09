@@ -244,7 +244,6 @@ var state={
   },
   stats2SelectedRecord:null,
   viewMode:{todo:"table",sent:"table",done:"table"},
-  acceptedMap:{"todo-img-009":true,"todo-img-011":true},
   detailTab:"notes",
   flowViewMode:"table",
   showNoteEditor:false,
@@ -388,7 +387,6 @@ var taskRows=[
     req:"限时回执",
     status:"待审批",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-15 18:00:00",
     source:"专网监测调度平台",
     description:"请核查境外推手操纵涉台虚假信息恶意煽动对立的信源矩阵，查清账号归属及资金链，并限时报送落地取证处置结论供审核。",
@@ -423,7 +421,6 @@ var taskRows=[
     req:"限时回执",
     status:"待审批",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-15 17:00:00",
     source:"涉企网络侵权举报专区",
     description:"某自媒体集中发布不实虚假言论侵害重点龙头企业商誉，请武丁同志限时查证首发账号并协调平台阻断处置，报送结报审批。",
@@ -435,34 +432,6 @@ var taskRows=[
       images:2,
       files:["首发账号侵权取证报告.pdf","平台处置封禁公函.pdf"]
     }
-  },
-  {
-    key:"todo-wj-accept",
-    id:"YQCZ1924020260914083000",
-    idShort:"448",
-    type:"待办",
-    senderOrg:"省委办公厅情指中心",
-    sender:"张伟",
-    senderTime:"08:30",
-    urgency:"平急",
-    categoryTag:"固定·日报",
-    direction:"发给我",
-    title:"【每日固定】全市涉网重点要素与舆情态势每日研判日报 (9月14日)",
-    template:"涉网要素研判日报模板",
-    path:"指令流转 > 每日研判",
-    time:"2026-09-14 08:30:00",
-    receiver:"武甲",
-    processor:"-",
-    req:"限时回执",
-    status:"待处理",
-    origin:"下发",
-    accepted:false,
-    deadline:"2026-09-14 17:00:00",
-    responseCountdown:"00小时25分",
-    source:"专网情指指挥调度平台",
-    description:"请各值班专班结合各区县网络巡查数据，汇总今日涉网重点要素动态、热点舆情趋势及境外炒作苗头，于当日17:00前完成研判日报报送。",
-    images:2,
-    files:["全市重点网络要素监测表.xlsx","日报格式规范要求.pdf"]
   },
   {
     key:"todo-wj-handling",
@@ -484,7 +453,6 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-15 20:00:00",
     handleCountdown:"03小时45分",
     source:"短视频平台巡查",
@@ -512,7 +480,6 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     rejected:true,
     rejectReason:"涉诈IP归属地技术反查证据不充分，未附带网络服务商节点反查指纹及跳板路由链路，请补齐后重新提交审核。",
     deadline:"2026-09-15 15:00:00",
@@ -520,32 +487,6 @@ var taskRows=[
     source:"网安情报感知系统",
     description:"针对近期利用伪装短链接引流境外涉诈博彩平台的异常行为开展技术逆向溯源，摸排落地反制措施。",
     files:["涉诈引流样本特征库.pcap"]
-  },
-  {
-    key:"todo-wj-resp-gt1d",
-    id:"YQCZ1924020260914101001",
-    idShort:"001",
-    type:"待办",
-    senderOrg:"省网络与信息安全应急指挥中心",
-    sender:"张伟",
-    senderTime:"10:00",
-    urgency:"平急",
-    categoryTag:"安全·巡检",
-    direction:"发给我",
-    title:"全省重要政务云基础设施例行网络安全加固自查",
-    template:"舆情处置-限时回执",
-    path:"指令流转 > 安全巡检",
-    time:"2026-09-14 10:00:00",
-    receiver:"武甲",
-    processor:"-",
-    req:"限时回执",
-    status:"待处理",
-    origin:"下发",
-    accepted:false,
-    deadline:"2026-09-17 18:00:00",
-    responseCountdown:"01天18小时",
-    source:"网络安全监测平台",
-    description:"请各节点责任人对辖区政务云主机进行例行防病毒与安全补丁自查并反馈。"
   },
   {
     key:"todo-wj-hand-gt1d",
@@ -558,7 +499,7 @@ var taskRows=[
     urgency:"加急",
     categoryTag:"合规·排查",
     direction:"发给我",
-    title:"关于重点新媒体账号运营主体资质合规性专项核查",
+    title:"关于重点新媒体账号运营主体资质��规性专项核查",
     template:"错误表述-限时回执",
     path:"指令流转 > 专项核查",
     time:"2026-09-14 09:30:00",
@@ -567,37 +508,10 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-18 12:00:00",
     handleCountdown:"02天10小时",
     source:"新媒体监管系统",
     description:"核查重点新媒体账号主体备案信息，完善台账并提交核验回执。"
-  },
-  {
-    key:"todo-wj-resp-overdue",
-    id:"YQCZ1924020260914101003",
-    idShort:"003",
-    type:"待办",
-    senderOrg:"网安监察支队指挥中心",
-    sender:"齐杰",
-    senderTime:"08:15",
-    urgency:"特急",
-    categoryTag:"突发·预警",
-    direction:"发给我",
-    title:"涉嫌非法数据跨境传输风险异常IP溯源与紧急封堵",
-    template:"舆情处置-限时回执",
-    path:"指令流转 > 应急阻断",
-    time:"2026-09-14 08:15:00",
-    receiver:"武甲",
-    processor:"-",
-    req:"限时回执",
-    status:"待处理",
-    origin:"下发",
-    accepted:false,
-    deadline:"2026-09-14 10:00:00",
-    responseOverdue:"02小时15分",
-    source:"数据安全监测中心",
-    description:"监测到异常大流量数据跨境传输，请紧急受理并采取近源封堵策略。"
   },
   {
     key:"todo-wj-hand-overdue",
@@ -619,7 +533,6 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-14 08:00:00",
     handleOverdue:"05小时30分",
     source:"国家网络安全通报中心",
@@ -645,7 +558,6 @@ var taskRows=[
     req:"限时回执",
     status:"待审批",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-15 17:00:00",
     source:"攻防演练指挥部",
     description:"武甲同志已完成演练攻防靶标加固与防守整改复盘，已提交办理回执，等待下发人张伟审批。",
@@ -709,33 +621,6 @@ var taskRows=[
     files:["三季度政务新媒体抽查通报.pdf"]
   },
   {
-    key:"sent-wj-unaccepted",
-    id:"YQCZ1924020260914103055",
-    idShort:"055",
-    type:"下发",
-    senderOrg:"台湾省网信办",
-    sender:"武甲",
-    senderTime:"10:30",
-    urgency:"特急",
-    categoryTag:"热点·辟谣",
-    direction:"我下发",
-    title:"关于涉台民生热点谣言查证与辟谣通稿发布协同指令",
-    template:"网络辟谣协同模板",
-    path:"指令流转 > 辟谣协同",
-    time:"2026-09-14 10:30:00",
-    receiver:"武乙",
-    processor:"-",
-    req:"限时回执",
-    status:"待处理",
-    origin:"下发",
-    accepted:false,
-    deadline:"2026-09-15 16:00:00",
-    responseCountdown:"00小时30分",
-    source:"舆情监测预警系统",
-    description:"请武乙同志组织有关市县网信办，针对网络热传的虚假涉汛救灾谣言进行查证核实，并起草权威辟谣通稿。",
-    files:["涉谣信息监测截图.zip"]
-  },
-  {
     key:"sent-wj-handling",
     id:"YQCZ1924020260914094520",
     idShort:"520",
@@ -755,7 +640,6 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-16 17:00:00",
     handleCountdown:"05小时15分",
     source:"直播巡查监测平台",
@@ -784,7 +668,6 @@ var taskRows=[
     req:"限时回执",
     status:"待审批",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-15 18:00:00",
     source:"专网监测调度平台",
     description:"武乙同志已完成核查处置并提交工单回执，等待主管领导武甲审批。处理人视角不能显示审批类按钮，只展示传阅按钮。",
@@ -798,33 +681,6 @@ var taskRows=[
       images:2,
       files:["涉案账号矩阵溯源证据链.pdf","属地网络安全协同拦截表.xlsx"]
     }
-  },
-  {
-    key:"todo-wy-accept",
-    id:"YQCZ1924020260914100022",
-    idShort:"022",
-    type:"待办",
-    senderOrg:"台湾省网信办",
-    sender:"武甲",
-    senderTime:"10:00",
-    urgency:"特急",
-    categoryTag:"重点·线索",
-    direction:"发给我",
-    title:"关于重点网络群组涉枪涉爆违法有害信息核查与处置的紧急指令",
-    template:"重大涉网线索协查模板",
-    path:"指令流转 > 紧急线索",
-    time:"2026-09-14 10:00:00",
-    receiver:"武乙",
-    processor:"-",
-    req:"限时回执",
-    status:"待处理",
-    origin:"下发",
-    accepted:false,
-    deadline:"2026-09-15 14:00:00",
-    responseCountdown:"00小时12分",
-    source:"部级线索交办通知",
-    description:"接公安部网安局通报线索，某小众即时通信群组内疑似有人发布非法涉爆管制违禁品兜售信息，请火速核实群组主导人员信息并跟进平台阻断。",
-    files:["涉案违法群组线索材料.pdf"]
   },
   {
     key:"todo-wy-handling",
@@ -846,11 +702,10 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-16 12:00:00",
     handleCountdown:"06小时20分",
     source:"网络仿冒巡检平台",
-    description:"监测发现境外服务器解析出仿冒省网信办域名的钓鱼站点，请立即协调域名注册商与DNS解析机构进行域名关停与解析污染清洗。",
+    description:"监测发现境外服务器解析出仿冒省网信办域名的钓鱼站点，请立即协调���名注册商与DNS解析机构进行域名关停与解析污染清洗。",
     files:["仿冒域名WHOIS信息.txt"]
   },
   {
@@ -873,7 +728,6 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     rejected:true,
     rejectReason:"核查结论偏简略，缺少属地主流媒体正面跟进通稿发布链接及舆论降温评估指标，请补充后重新提交。",
     deadline:"2026-09-14 18:00:00",
@@ -902,7 +756,6 @@ var taskRows=[
     req:"限时回执",
     status:"待审批",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-15 17:00:00",
     source:"漏洞预警共享平台",
     description:"请武丙专员跟进全省32个二级系统应急漏洞复测加固情况，形成技术结报。",
@@ -966,33 +819,6 @@ var taskRows=[
     files:["系统安全风险提示函(2026第18期).pdf"]
   },
   {
-    key:"sent-wy-unaccepted",
-    id:"YQCZ1924020260914101530",
-    idShort:"530",
-    type:"下发",
-    senderOrg:"台湾省网信办",
-    sender:"武乙",
-    senderTime:"10:15",
-    urgency:"特急",
-    categoryTag:"安全·排查",
-    direction:"我下发",
-    title:"全省关键信息基础设施网络安全防护巡检协查指令",
-    template:"基础设施巡检模板",
-    path:"指令流转 > 设施巡检",
-    time:"2026-09-14 10:15:00",
-    receiver:"武丙",
-    processor:"-",
-    req:"限时回执",
-    status:"待处理",
-    origin:"下发",
-    accepted:false,
-    deadline:"2026-09-15 15:00:00",
-    responseCountdown:"00小时20分",
-    source:"安全态势感知平台",
-    description:"请武丙同志对重点电力、交通调度节点开展内网安全扫描并反馈巡检基线清单。",
-    files:["巡检指标指引.pdf"]
-  },
-  {
     key:"sent-wy-handling",
     id:"YQCZ1924020260914091012",
     idShort:"012",
@@ -1012,7 +838,6 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-16 11:30:00",
     handleCountdown:"04小时50分",
     source:"移动安全检测中心",
@@ -1041,7 +866,6 @@ var taskRows=[
     req:"限时回执",
     status:"待审批",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-15 17:00:00",
     source:"漏洞预警共享平台",
     description:"武丙专员已提交漏洞修复加固报告，正在等待下发人武乙审批。处理人视角不能显示审批类按钮，只展示传阅按钮。",
@@ -1053,33 +877,6 @@ var taskRows=[
       images:1,
       files:["漏洞排查及安全加固报告.pdf"]
     }
-  },
-  {
-    key:"todo-wb-accept",
-    id:"YQCZ1924020260914102000",
-    idShort:"881",
-    type:"待办",
-    senderOrg:"台湾省网信办",
-    sender:"武乙",
-    senderTime:"10:20",
-    urgency:"加急",
-    categoryTag:"水军·溯源",
-    direction:"发给我",
-    title:"关于属地论坛某热点帖文异常流量与水军刷量技术溯源协查",
-    template:"水军刷量研判模板",
-    path:"指令流转 > 流量对抗",
-    time:"2026-09-14 10:20:00",
-    receiver:"武丙",
-    processor:"-",
-    req:"限时回执",
-    status:"待处理",
-    origin:"下发",
-    accepted:false,
-    deadline:"2026-09-15 15:30:00",
-    responseCountdown:"00小时18分",
-    source:"论坛内容监控系统",
-    description:"监测发现某本地论坛热帖短时间内被刷量转发超过2万次，IP高度集聚在同一代理池，请调取访问日志核实水军自动化脚本特征。",
-    files:["异常访问日志采样.log"]
   },
   {
     key:"todo-wb-handling",
@@ -1101,7 +898,6 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-16 18:00:00",
     handleCountdown:"14小时20分",
     source:"移动应用安全检测平台",
@@ -1120,7 +916,7 @@ var taskRows=[
     categoryTag:"代码·审计",
     direction:"发给我",
     title:"省直属事业单位网站开源组件反序列化漏洞修复与复查",
-    template:"安全漏洞加固模板",
+    template:"安全漏洞加固���板",
     path:"指令流转 > 漏洞排查",
     time:"2026-09-13 17:00:00",
     receiver:"武丙",
@@ -1128,7 +924,6 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     rejected:true,
     rejectReason:"修复补丁未完成沙箱回归验证，发现仍存在侧信道绕过可能，请重新复测加固。",
     deadline:"2026-09-15 11:00:00",
@@ -1207,7 +1002,6 @@ var taskRows=[
     req:"限时回执",
     status:"待审批",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-15 18:00:00",
     source:"主机安全EDR系统",
     description:"武丁专员已配合协调全省政务云主机查杀加密勒索进程，已提交处置结果供武丙审核。",
@@ -1219,32 +1013,6 @@ var taskRows=[
       images:2,
       files:["勒索病毒查杀阻断结报.pdf"]
     }
-  },
-  {
-    key:"sent-wb-unaccepted",
-    id:"YQCZ1924020260914105018",
-    idShort:"518",
-    type:"下发",
-    senderOrg:"台湾省网信办",
-    sender:"武丙",
-    senderTime:"10:50",
-    urgency:"加急",
-    categoryTag:"网络·巡检",
-    direction:"我下发",
-    title:"关于市县政务内网终端补丁升级合规率摸底自查指令",
-    template:"合规排查模板",
-    path:"指令流转 > 终端合规",
-    time:"2026-09-14 10:50:00",
-    receiver:"武丁",
-    processor:"-",
-    req:"限时回执",
-    status:"待处理",
-    origin:"下发",
-    accepted:false,
-    deadline:"2026-09-15 17:30:00",
-    responseCountdown:"00小时40分",
-    source:"内网安全管理平台",
-    description:"自查全省政务终端操作系统补丁更新情况，督促尽快修复高危漏洞。"
   },
   {
     key:"sent-wb-handling",
@@ -1266,7 +1034,6 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-16 18:00:00",
     handleCountdown:"08小时10分",
     source:"堡垒机监控告警",
@@ -1295,7 +1062,6 @@ var taskRows=[
     req:"限时回执",
     status:"待审批",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-15 17:00:00",
     source:"涉企网络侵权举报专区",
     description:"武丁专员已完成属地核查与侵权账号封禁阻断并提交结报，正等待主管领导武甲审批。处理人提交工单后，不显示审批类按钮，只展示传阅按钮。",
@@ -1328,7 +1094,6 @@ var taskRows=[
     req:"限时回执",
     status:"待审批",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-15 18:00:00",
     source:"主机安全EDR系统",
     description:"武丁专员已配合完成病毒查杀与主机加固并提交办理回执，正在等待下发人武丙审批。处理人视角不能显示审批类按钮，只展示传阅按钮。",
@@ -1340,33 +1105,6 @@ var taskRows=[
       images:2,
       files:["勒索病毒查杀阻断结报.pdf"]
     }
-  },
-  {
-    key:"todo-wd-accept",
-    id:"YQCZ1924020260914104019",
-    idShort:"019",
-    type:"待办",
-    senderOrg:"台湾省网信办",
-    sender:"武丙",
-    senderTime:"10:40",
-    urgency:"加急",
-    categoryTag:"月度·自查",
-    direction:"发给我",
-    title:"关于开展全省重点行业网络安全自查自纠月度摸排指令",
-    template:"行业安全自查模板",
-    path:"指令流转 > 行业自查",
-    time:"2026-09-14 10:40:00",
-    receiver:"武丁",
-    processor:"-",
-    req:"限时回执",
-    status:"待处理",
-    origin:"下发",
-    accepted:false,
-    deadline:"2026-09-15 16:30:00",
-    responseCountdown:"00小时35分",
-    source:"行业自律协调小组",
-    description:"请武丁专员汇总金融、能源、交通等重点行业关键系统自查自纠自评清单，并在规定时限内完成回执提交。",
-    files:["行业网络安全自查自纠表.xlsx"]
   },
   {
     key:"todo-wd-handling",
@@ -1388,7 +1126,6 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-16 17:00:00",
     handleCountdown:"07小时50分",
     source:"内容合规监测云",
@@ -1415,7 +1152,6 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     rejected:true,
     rejectReason:"未提供大屏终端物联卡实名制绑定及控制主机离网物理隔离照片，请补充佐证后重新报送。",
     deadline:"2026-09-14 19:00:00",
@@ -1443,7 +1179,6 @@ var taskRows=[
     req:"限时回执",
     status:"待审批",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-15 18:00:00",
     source:"省通信管理局通报",
     description:"请武丙专员跟进已注销ICP主体未关停网站排查，武丙已报送回执供武丁审核。",
@@ -1507,32 +1242,6 @@ var taskRows=[
     files:["公共场所WiFi排查通报.pdf"]
   },
   {
-    key:"sent-wd-unaccepted",
-    id:"YQCZ1924020260914101030",
-    idShort:"030",
-    type:"下发",
-    senderOrg:"台湾省网信办",
-    sender:"武丁",
-    senderTime:"10:10",
-    urgency:"加急",
-    categoryTag:"安全·汇总",
-    direction:"我下发",
-    title:"关于开展全省网信系统网络安全自查自评月度汇总指令",
-    template:"自评汇总模板",
-    path:"指令流转 > 自查自评",
-    time:"2026-09-14 10:10:00",
-    receiver:"武丙",
-    processor:"-",
-    req:"限时回执",
-    status:"待处理",
-    origin:"下发",
-    accepted:false,
-    deadline:"2026-09-15 16:00:00",
-    responseCountdown:"00小时45分",
-    source:"省委网信办秘书处",
-    description:"请武丙专员牵头收集各科室自评报表并起草月度网络安全总体评估。"
-  },
-  {
     key:"sent-wd-handling",
     id:"YQCZ1924020260914084500",
     idShort:"450",
@@ -1552,7 +1261,6 @@ var taskRows=[
     req:"限时回执",
     status:"待处理",
     origin:"下发",
-    accepted:true,
     deadline:"2026-09-16 18:00:00",
     handleCountdown:"09小时30分",
     source:"网络宣传处",
@@ -1745,14 +1453,13 @@ function pagination(total,size,current,mode,extraStyle){
 }
 function isItemOverdue(r){
   if(r.status==="已归档" || r.status==="待重新派发") return false;
-  if(r.responseOverdue || r.handleOverdue || r.overdueHours) return true;
+  if(r.handleOverdue || r.overdueHours) return true;
   return false;
 }
 function isItemTodayDue(r){
   if(r.status==="已归档" || r.status==="待重新派发") return false;
   if(isItemOverdue(r)) return false;
   if(r.handleCountdown && !r.handleCountdown.includes("天")) return true;
-  if(r.responseCountdown && !r.responseCountdown.includes("天")) return true;
   return false;
 }
 function setPaginationPage(root,page){
@@ -1814,11 +1521,11 @@ function renderUnifiedCountdownChip(type, timeStr, isOverdue){
   var label="";
   var icon="";
   if(isOverdue){
-    label=type==="response"?"响应已超时：":"处理已超时：";
-    icon=type==="response"?ico("alert-triangle",12):ico("alert-octagon",12);
+    label="处理已超时：";
+    icon=ico("alert-octagon",12);
   }else{
-    label=type==="response"?"响应倒计时：":"处理倒计时：";
-    icon=isOver1Day?ico("clock-3",12):(type==="response"?ico("zap",12):ico("timer",12));
+    label="处理倒计时：";
+    icon=isOver1Day?ico("clock-3",12):ico("timer",12);
   }
 
   return '<span class="countdown-chip '+colorClass+'">'+icon+' '+label+escapeHtml(cleanTime)+'</span>';
@@ -1826,12 +1533,9 @@ function renderUnifiedCountdownChip(type, timeStr, isOverdue){
 
 function isCurrentUserHandler(row){
   if(!row) return false;
-  var isAccepted = !!(state.acceptedMap && state.acceptedMap[row.key]) || !!row.accepted;
   var displayStatus = row.status;
   if(row.status === "已退回"){
     displayStatus = "待处理";
-  }else if(row.status === "待处理"){
-    displayStatus = isAccepted ? "待处理" : "待受理";
   }
 
   if(displayStatus === "已归档") return false;
@@ -1908,12 +1612,9 @@ function renderArchivedProcessorCell(row){
 }
 
 function renderCurrentHandlerCell(row){
-  var isAccepted = !!(state.acceptedMap && state.acceptedMap[row.key]) || !!row.accepted;
   var displayStatus = row.status;
   if(row.status === "已退回"){
     displayStatus = "待处理";
-  }else if(row.status === "待处理"){
-    displayStatus = isAccepted ? "待处理" : "待受理";
   }
 
   // 4、如果是已办结，不用显示当前处理人，只用显示已归档的tag和状态列同样
@@ -1930,42 +1631,6 @@ function renderCurrentHandlerCell(row){
   }
   if(!receivers.length){
     receivers = ["武乙"];
-  }
-
-  // 未受理且为限时多人：太多的以...展示，鼠标移入可气泡查看详情，突出当前登录人
-  if(displayStatus === "待受理" && receivers.length > 1){
-    var total = receivers.length;
-    var isMeInReceivers = receivers.includes(currentUser);
-    var nameText = "";
-    if(isMeInReceivers){
-      nameText = escapeHtml(currentUser) + "（我）等" + total + "人";
-    } else if(total > 2){
-      nameText = escapeHtml(receivers[0]) + "、" + escapeHtml(receivers[1]) + "...";
-    } else {
-      nameText = escapeHtml(receivers.join("、"));
-    }
-    var tagsHtml = receivers.map(function(r){
-      var isMe = (r === currentUser);
-      return '<span class="handler-pop-tag ' + (isMe ? 'is-me' : '') + '">' + ico("user", 11) + escapeHtml(r) + (isMe ? '（我）' : '') + '</span>';
-    }).join("");
-
-    var popoverHtml = '<div class="handler-popover">' +
-      '<div class="handler-pop-title"><span>待受理人员名单</span><b>共 ' + total + ' 人</b></div>' +
-      '<div class="handler-pop-tags">' + tagsHtml + '</div>' +
-      '<div class="handler-pop-note">注：限时多人协同指令，任一责任人受理响应后即进入办理阶段。</div>' +
-    '</div>';
-
-    var nameHtml = isMeInReceivers
-      ? '<span class="handler-primary-name is-current-user" title="' + escapeHtml(receivers.join("、")) + '">' + escapeHtml(currentUser) + '</span><span class="handler-me-tag">我的</span>'
-      : '<span class="handler-primary-name" title="' + escapeHtml(receivers.join("、")) + '">' + nameText + '</span>';
-
-    return '<div class="handler-cell-container">' +
-      '<div class="handler-name-row">' +
-        nameHtml +
-        '<span class="handler-more-badge">' + total + '人</span>' +
-      '</div>' +
-      popoverHtml +
-    '</div>';
   }
 
   // 待审批节点：当前处理责任人展示审批人姓名（即指令下发人），若为当前登录人则高亮突出
@@ -1988,7 +1653,7 @@ function renderCurrentHandlerCell(row){
     return '<div class="handler-cell-container"><div class="handler-name-row">' + userHtml + '</div></div>';
   }
 
-  // 其余在办状态（待处理、单人待受理等）：若为当前登录人则高亮突出
+  // 其余在办状态（待处理等）：若为当前登录人则高亮突出
   var handlerName = (row.processor && row.processor !== "-") ? row.processor : receivers[0];
   var isHandlerMe = (handlerName === currentUser);
   var singleHtml = isHandlerMe
@@ -2027,13 +1692,10 @@ function taskTableRowHtml(row,mode){
   var rejectedTag = isReturned ? '<span class="tag-rejected">'+ico("rotate-ccw",11)+'驳回重办</span>' : '';
   var badgesHtml='<div class="title-badges-row">'+urgencyBadge+rejectedTag+'</div>';
 
-  // 6、处在响应倒计时的状态应该是待受理，处在处理阶段的状态是待处理；状态去除已退回，已退回的状态也为待处理
-  var isAccepted=!!(state.acceptedMap&&state.acceptedMap[row.key]) || !!row.accepted;
+  // 状态去除已退回，已退回的状态也为待处理
   var displayStatus=row.status;
   if(row.status==="已退回"){
     displayStatus="待处理";
-  }else if(row.status==="待处理"){
-    displayStatus=isAccepted?"待处理":"待受理";
   }else if(isNotice && row.status==="待阅"){
     displayStatus="待处理";
   }else if(mode==="read"){
@@ -2044,7 +1706,7 @@ function taskTableRowHtml(row,mode){
   // 待阅：无倒计时，无需展示倒计时tag
   // 待审批：无倒计时，无需展示倒计时tag
   // 已归档：无倒计时，无需展示倒计时tag
-  // 待重新派发：无需响应倒计时
+  // 待重新派发：无倒计时
   if(row.status==="待阅" || row.req==="仅阅读" || row.status==="待审批" || row.status==="已归档" || row.status==="待重新派发" || displayStatus==="待重新派发"){
     countdownBoxHtml="";
   } else {
@@ -2068,24 +1730,11 @@ function taskTableRowHtml(row,mode){
         }
         countdownBoxHtml='<div class="todo-compact-meta-row">'+deadlinePart+chipHtml+'</div>';
       } else {
-        // 处在响应阶段（待受理）
-        if(!isAccepted){
-          if(row.responseOverdue){
-            // 待受理：已超时的，带有【响应已超时：超时时间】
-            chipHtml=renderUnifiedCountdownChip("response", row.responseOverdue, true);
-          }else{
-            // 待受理：带有【响应倒计时：倒计时间】
-            chipHtml=renderUnifiedCountdownChip("response", row.responseCountdown||"00小时15分", false);
-          }
-        } else {
-          // 处在处理阶段（待处理）
-          if(row.handleOverdue || row.overdueHours){
-            // 待处理：处理超时的，带有【处理已超时：超时时间】
-            chipHtml=renderUnifiedCountdownChip("handle", row.handleOverdue||row.overdueHours, true);
-          }else{
-            // 待处理：受理完成后，带有【处理倒计时：时间】
-            chipHtml=renderUnifiedCountdownChip("handle", row.handleCountdown||"03小时59分", false);
-          }
+        // 处理阶段（待处理）
+        if(row.handleOverdue || row.overdueHours){
+          chipHtml=renderUnifiedCountdownChip("handle", row.handleOverdue||row.overdueHours, true);
+        }else{
+          chipHtml=renderUnifiedCountdownChip("handle", row.handleCountdown||"03小时59分", false);
         }
         countdownBoxHtml='<div class="todo-compact-meta-row">'+deadlinePart+chipHtml+'</div>';
       }
@@ -2095,7 +1744,7 @@ function taskTableRowHtml(row,mode){
   // 5、标题下发去除发文模板。
   var titleCell='<div class="todo-title-wrap">'+badgesHtml+'<span class="todo-title-link" title="'+escapeHtml(row.title)+'">'+escapeHtml(row.title)+'</span>'+countdownBoxHtml+'</div>';
 
-  var statusColBadgeCls=displayStatus==="待受理"?"accepting":statusClass(displayStatus);
+  var statusColBadgeCls=statusClass(displayStatus);
   var statusCol='<div style="text-align:center"><span class="status-col-badge '+statusColBadgeCls+'">'+displayStatus+'</span></div>';
 
   // 8、操作列按钮逻辑：
@@ -2670,7 +2319,7 @@ function renderMyInstructions(){
   var mainHtml='<main class="list-main"><section class="list-content-card">'+pillsBarHtml+filterBar(currentMode,selectedTotal)+tableContentHtml+pagination(selectedTotal,pageSize,currentPage,currentMode)+'</section></main>';
 
   var pageTitle="我的指令";
-  var subTitle=subPage==="todo"?"办理与查阅派发至我的各项指令，支持在线快速受理与处置填报":subPage==="sent"?"查看并跟踪我发出的指令流转进度与回执状态":subPage==="read"?"查阅传阅派发至我的公文及工单通报，支持点击详情随时查阅知悉":subPage==="done"?"查阅历史已办结指令档案及处置成果":"暂存尚未正式下发的指令草稿，支持随时继续编辑与派发";
+  var subTitle=subPage==="todo"?"办理与查阅派发至我的各项指令，支持在线处置填报":subPage==="sent"?"查看并跟踪我发出的指令流转进度与回执状态":subPage==="read"?"查阅传阅派发至我的公文及工单通报，支持点击详情随时查阅知悉":subPage==="done"?"查阅历史已办结指令档案及处置成果":"暂存尚未正式下发的指令草稿，支持随时继续编辑与派发";
   var topAction="";
 
   return '<div class="page">'+pageHead(pageTitle,subTitle,topAction)+'<div class="list-layout">'+sidebarHtml+mainHtml+'</div>'+footer()+'</div>';
@@ -2845,7 +2494,6 @@ var stats2PeriodData = {
     kpis: [
       { title: "指令下发总量", value: "306 件", icon: "send", yoy: "14.2%", mom: "10.1%", yoyTrend: "up", momTrend: "up" },
       { title: "办结归档总量", value: "287 件", icon: "archive", yoy: "18.5%", mom: "6.7%", yoyTrend: "up", momTrend: "up" },
-      { title: "平均响应受理耗时", value: "16.5 min", icon: "timer", yoy: "22.4%", mom: "9.3%", yoyTrend: "down", momTrend: "down" },
       { title: "平均处置整改耗时", value: "2.4 h", icon: "clock-3", yoy: "16.7%", mom: "14.3%", yoyTrend: "down", momTrend: "down" },
       { title: "回执一次审核通过率", value: "93.8%", icon: "shield-check", yoy: "6.6%", mom: "2.5%", yoyTrend: "up", momTrend: "up" }
     ]
@@ -2854,7 +2502,6 @@ var stats2PeriodData = {
     kpis: [
       { title: "指令下发总量", value: "864 件", icon: "send", yoy: "12.8%", mom: "8.4%", yoyTrend: "up", momTrend: "up" },
       { title: "办结归档总量", value: "821 件", icon: "archive", yoy: "15.3%", mom: "7.2%", yoyTrend: "up", momTrend: "up" },
-      { title: "平均响应受理耗时", value: "17.1 min", icon: "timer", yoy: "19.8%", mom: "6.0%", yoyTrend: "down", momTrend: "down" },
       { title: "平均处置整改耗时", value: "2.6 h", icon: "clock-3", yoy: "15.2%", mom: "7.1%", yoyTrend: "down", momTrend: "down" },
       { title: "回执一次审核通过率", value: "92.9%", icon: "shield-check", yoy: "5.7%", mom: "1.5%", yoyTrend: "up", momTrend: "up" }
     ]
@@ -2863,7 +2510,6 @@ var stats2PeriodData = {
     kpis: [
       { title: "指令下发总量", value: "2,840 件", icon: "send", yoy: "18.8%", mom: "11.2%", yoyTrend: "up", momTrend: "up" },
       { title: "办结归档总量", value: "2,716 件", icon: "archive", yoy: "20.7%", mom: "13.5%", yoyTrend: "up", momTrend: "up" },
-      { title: "平均响应受理耗时", value: "19.4 min", icon: "timer", yoy: "19.2%", mom: "11.4%", yoyTrend: "down", momTrend: "down" },
       { title: "平均处置整改耗时", value: "3.1 h", icon: "clock-3", yoy: "18.4%", mom: "9.8%", yoyTrend: "down", momTrend: "down" },
       { title: "回执一次审核通过率", value: "90.6%", icon: "shield-check", yoy: "3.9%", mom: "2.1%", yoyTrend: "up", momTrend: "up" }
     ]
@@ -2874,7 +2520,6 @@ var stats2FormData = {
   kpis: [
     { title: "指令下发总量", value: "306 件", icon: "send" },
     { title: "办结归档总量", value: "287 件", icon: "archive" },
-    { title: "平均响应受理耗时", value: "16.5 min", icon: "timer" },
     { title: "平均处置整改耗时", value: "2.4 h", icon: "clock-3" },
     { title: "回执一次审核通过率", value: "93.8%", icon: "shield-check" }
   ],
@@ -2916,7 +2561,7 @@ var stats2FormData = {
   ],
   rankings: [
     { org: "网络安全协调处专班", count: 68, respRate: "98.5%", finishRate: "95.6%", docRate: "98.5%", passRate: "97.1%", rejectCount: 1, avgResp: "11 min", avgHandle: "1.8 h", grade: "S", gradeText: "卓越" },
-    { org: "市公安局情指网安支队", count: 54, respRate: "96.3%", finishRate: "94.4%", docRate: "96.3%", passRate: "94.4%", rejectCount: 2, avgResp: "14 min", avgHandle: "2.1 h", grade: "S", gradeText: "卓越" },
+    { org: "市公安局情指网安支队", count: 54, respRate: "96.3%", finishRate: "94.4%", docRate: "96.3%", passRate: "94.4%", rejectCount: 2, avgResp: "14 min", avgHandle: "2.1 h", grade: "S", gradeText: "卓���" },
     { org: "教育系统网络应急专班", count: 42, respRate: "92.9%", finishRate: "90.5%", docRate: "90.5%", passRate: "90.5%", rejectCount: 3, avgResp: "19 min", avgHandle: "2.8 h", grade: "A", gradeText: "良好" },
     { org: "住建与城市更新工作组", count: 36, respRate: "94.4%", finishRate: "88.9%", docRate: "88.9%", passRate: "88.9%", rejectCount: 4, avgResp: "24 min", avgHandle: "3.2 h", grade: "B", gradeText: "关注" },
     { org: "文旅政务新媒体中心", count: 32, respRate: "90.6%", finishRate: "87.5%", docRate: "84.4%", passRate: "84.4%", rejectCount: 5, avgResp: "28 min", avgHandle: "3.6 h", grade: "B", gradeText: "关注" },
@@ -2928,7 +2573,6 @@ var stats2FormData = {
       title: "关于对涉台虚假信息恶意编造源头查证与协同管控报告",
       template: "突发敏感舆情处置模板",
       urgency: "特急",
-      responseTimeReq: "15分钟内",
       deadlineReq: "2小时内 (2026-09-14 11:20)",
       source: "专网监测调度平台",
       url: "https://monitor.wxb.cn/alert/20260914-089",
@@ -2937,7 +2581,6 @@ var stats2FormData = {
       receiverOrg: "网络安全协调处专班",
       receiver: "武乙",
       description: "请核查境外推手操纵涉台虚假信息恶意煽动对立的信源矩阵，查清账号归属及资金链，并限时报送落地取证处置结论供审核。",
-      respTimeActual: "8分钟 (准时)",
       handleDuration: "1小时15分 (准时)",
       measure: "违规有害信息断链下架",
       receiptNote: "专班已查实涉案3个重点引流境外虚假信源矩阵，掌握境内推手2人真实身份信息，已完成电子取证固化并采取关停封堵措施，处置闭环。",
@@ -2953,7 +2596,6 @@ var stats2FormData = {
       title: "涉重点涉企虚假商誉侵害舆情快速阻断及属地核查结报",
       template: "突发敏感舆情处置模板",
       urgency: "加急",
-      responseTimeReq: "30分钟内",
       deadlineReq: "4小时内 (2026-09-14 13:10)",
       source: "微博平台",
       url: "https://weibo.com/detail/5078129381273912",
@@ -2962,7 +2604,6 @@ var stats2FormData = {
       receiverOrg: "市公安局情指网安支队",
       receiver: "武丁",
       description: "微博话题#涉台龙头企业违规排污传言#发酵迅速，经初核为恶意捏造，请立即锁定发帖人并下架造谣博文。",
-      respTimeActual: "15分钟 (准时)",
       handleDuration: "2小时10分 (准时)",
       measure: "违规有害信息断链下架",
       receiptNote: "已督促新浪微博官方对造谣主帖实施断链下架，发帖人IP已锁定并移交属地公安约谈诫勉，网络热度已消退。",
@@ -2978,7 +2619,6 @@ var stats2FormData = {
       title: "官方门户网站重要政策新闻领导人职务表述错误紧急订正",
       template: "政务发文规范表述紧急纠错模板",
       urgency: "特急",
-      responseTimeReq: "15分钟内",
       deadlineReq: "1小时内 (2026-09-14 10:30)",
       source: "政务官方门户",
       url: "https://gov.tw.cn/news/20260914/001.html",
@@ -2987,7 +2627,6 @@ var stats2FormData = {
       receiverOrg: "文旅政务新媒体中心",
       receiver: "武乙",
       description: "网信办AI审校系统扫描发现该文第三段出现国家机关领导人职务名称错漏，属于严重表述差错，须立即修正！",
-      respTimeActual: "6分钟 (准时)",
       handleDuration: "25分钟 (准时)",
       measure: "涉政表述修正/改版发布",
       receiptNote: "已在后台内容管理系统中修正涉事段落领导人标准职务全称，全站静态页面已刷新缓存，排查未见其他表述错误。",
@@ -3003,7 +2642,6 @@ var stats2FormData = {
       title: "关于某高校学生涉嫌集体食物中毒网络传言澄清辟谣通报",
       template: "突发敏感舆情处置模板",
       urgency: "加急",
-      responseTimeReq: "30分钟内",
       deadlineReq: "4小时内 (2026-09-13 18:00)",
       source: "微信公众号",
       url: "https://mp.weixin.qq.com/s/sample098877",
@@ -3012,7 +2650,6 @@ var stats2FormData = {
       receiverOrg: "教育系统网络应急专班",
       receiver: "陈乾喜",
       description: "微信朋友圈疯传某大学200余名师生食物中毒入院抢救，请教育厅会同卫健委立即核查并在校方公众号发布权威澄清！",
-      respTimeActual: "22分钟 (准时)",
       handleDuration: "3小时10分 (准时)",
       measure: "官方澄清辟谣与跟评引导",
       receiptNote: "校方实地核查仅3人因季节性肠胃炎就诊并已出院，网传200人纯属造谣。校方官方微信已发布权威事实通报并控评置顶引导。",
@@ -3028,7 +2665,6 @@ var stats2FormData = {
       title: "抖音短视频平台摆拍涉民生虚假悲情短视频核查处置",
       template: "突发敏感舆情处置模板",
       urgency: "加急",
-      responseTimeReq: "30分钟内",
       deadlineReq: "4小时内 (2026-09-13 16:00)",
       source: "抖音短视频",
       url: "https://v.douyin.com/idk93821/",
@@ -3037,7 +2673,6 @@ var stats2FormData = {
       receiverOrg: "重点属地区县网信联络办",
       receiver: "太空人",
       description: "抖音账号“乡情实录”摆拍虚假孤寡老人乞讨视频骗取打赏，引发不良社会影响，请落地查人并处置账号。",
-      respTimeActual: "42分钟 (超时)",
       handleDuration: "4小时30分 (超时)",
       measure: "约谈主体与技术封堵管控",
       receiptNote: "属地派出所已传唤短视频创作者，其承认脚本摆拍吸粉事实，已责令删除全部系列视频并作具结悔过书。",
@@ -3053,7 +2688,6 @@ var stats2FormData = {
       title: "关于某市政燃气管网泄漏险情不实视频的落地排查回执",
       template: "常规舆情处置排查与汇报模板",
       urgency: "平急",
-      responseTimeReq: "1小时内",
       deadlineReq: "12小时内 (2026-09-12 20:00)",
       source: "小红书平台",
       url: "https://xiaohongshu.com/discovery/item/66e0129",
@@ -3062,7 +2696,6 @@ var stats2FormData = {
       receiverOrg: "住建与城市更新工作组",
       receiver: "谭星",
       description: "小红书有博主发帖称某主干道燃气管道泄漏已造成人员伤亡，请住建市政部门紧急拉网式排查并报送现场安全结论。",
-      respTimeActual: "35分钟 (准时)",
       handleDuration: "4小时50分 (准时)",
       measure: "落地核实排查并出具公函",
       receiptNote: "市政燃气抢修大队现场全段红外检漏检测，压力数值正常无任何泄漏，博主实为截取往年消防演练画面移花接木，已出具安全通报。",
@@ -3171,7 +2804,7 @@ function renderStats2Overview(){
     '<div class="stats2-panel">' +
       '<div class="stats2-panel-head">' +
         '<div class="stats2-panel-title">'+ico("wrench",17)+'<span>回执端 · 处置整改手段分类占比</span></div>' +
-        '<span class="stats2-panel-tip">管理者透视：一线落实处置的具体措施构成</span>' +
+        '<span class="stats2-panel-tip">管理者透视：一线落实处置的具体措��构成</span>' +
       '</div>' +
       '<div id="stats2-chart-measure" class="stats2-chart-box"></div>' +
     '</div>' +
@@ -3569,7 +3202,6 @@ function renderStats2FormDetailModal(){
         '<span class="stats2-kv-label">指令标题:</span><span class="stats2-kv-value" style="font-weight:700;color:#0f172a">'+escapeHtml(r.title)+'</span>' +
         '<span class="stats2-kv-label">业务模板:</span><span class="stats2-kv-value">'+escapeHtml(r.template)+'</span>' +
         '<span class="stats2-kv-label">紧急程度:</span><span class="stats2-kv-value"><b style="color:'+uColor+'">'+r.urgency+'</b></span>' +
-        '<span class="stats2-kv-label">响应时限:</span><span class="stats2-kv-value">'+r.responseTimeReq+'</span>' +
         '<span class="stats2-kv-label">完成时限:</span><span class="stats2-kv-value">'+r.deadlineReq+'</span>' +
         '<span class="stats2-kv-label">舆情来源:</span><span class="stats2-kv-value"><b>'+r.source+'</b></span>' +
         '<span class="stats2-kv-label">原信息链接:</span><span class="stats2-kv-value">'+(r.url?'<a href="'+r.url+'" target="_blank" class="link">'+r.url+'</a>':'无')+'</span>' +
@@ -3580,7 +3212,6 @@ function renderStats2FormDetailModal(){
     '<div class="stats2-field-section">' +
       '<div class="stats2-section-head">'+ico("clipboard-check",16)+'<span>二、现场承办回执端 · 表单填报要素</span><span style="margin-left:auto;font-size:12px;font-weight:normal;color:#64748b">承办责任人: <b>'+r.receiverOrg+' · '+r.receiver+'</b></span></div>' +
       '<div class="stats2-kv-grid">' +
-        '<span class="stats2-kv-label">响应受理时效:</span><span class="stats2-kv-value"><b style="color:#059669">'+r.respTimeActual+'</b></span>' +
         '<span class="stats2-kv-label">处置总耗时:</span><span class="stats2-kv-value"><b style="color:#059669">'+r.handleDuration+'</b></span>' +
         '<span class="stats2-kv-label">整改处置手段:</span><span class="stats2-kv-value" style="grid-column:2/5"><span class="tag" style="background:#f0fdf4;color:#166534;font-size:13px;padding:3px 10px;font-weight:700">'+r.measure+'</span></span>' +
         '<span class="stats2-kv-label">处置结果结论:</span><span class="stats2-kv-value" style="grid-column:2/5;background:#ffffff;padding:8px 12px;border-radius:4px;border:1px solid #e2e8f0;line-height:1.5">'+escapeHtml(r.receiptNote)+'</span>' +
@@ -3601,9 +3232,9 @@ function renderStats2FormDetailModal(){
 
 function exportStats2FormReport(){
   var records = stats2FormData.records;
-  var headers = ["工单编号", "指令标题", "业务模板", "紧急程度", "限时响应要求", "限时完成要求", "舆情来源平台", "原文链接", "发起单位", "发起人", "承办单位", "承办责任人", "实际响应耗时", "实际处置耗时", "整改处置措施", "回执说明", "佐证图片数", "结案公函数", "凭证等级", "审核结论", "审核意见"];
+  var headers = ["工单编号", "指令标题", "业务模板", "紧急程度", "限时完成要求", "舆情来源平台", "原文链接", "发起单位", "发起人", "承办单位", "承办责任人", "实际处置耗时", "整改处置措施", "回执说明", "佐证图片数", "结案公函数", "凭证等级", "审核结论", "审核意见"];
   var rowsHtml = records.map(function(r){
-    var values = [r.id, r.title, r.template, r.urgency, r.responseTimeReq, r.deadlineReq, r.source, r.url||"", r.senderOrg, r.sender, r.receiverOrg, r.receiver, r.respTimeActual, r.handleDuration, r.measure, r.receiptNote, r.imagesCount, r.filesCount, r.evidenceGrade, r.auditResult, r.auditComment];
+    var values = [r.id, r.title, r.template, r.urgency, r.deadlineReq, r.source, r.url||"", r.senderOrg, r.sender, r.receiverOrg, r.receiver, r.handleDuration, r.measure, r.receiptNote, r.imagesCount, r.filesCount, r.evidenceGrade, r.auditResult, r.auditComment];
     return "<tr>" + values.map(function(v){ return "<td>" + escapeHtml(String(v)).replace(/\n/g," ") + "</td>"; }).join("") + "</tr>";
   }).join("");
   var html = '<html><head><meta charset="UTF-8"></head><body><table border="1"><thead><tr>' + headers.map(function(h){ return "<th>" + h + "</th>"; }).join("") + '</tr></thead><tbody>' + rowsHtml + '</tbody></table></body></html>';
@@ -3645,7 +3276,6 @@ var menuPermissionGroups = [
     badge: "基础高频",
     items: [
       { id: "menu_todo_list", name: "待办列表页面访问", code: "menu:todo", type: "menu", desc: "允许进入待办工单与办理列表页面查阅承办任务" },
-      { id: "btn_todo_accept", name: "认领受理指令", code: "btn:todo:accept", type: "button", desc: "对新到达的指派指令执行认领与受理锁定" },
       { id: "btn_todo_process", name: "办理与回执提报", code: "btn:todo:process", type: "button", desc: "填报处置进展、上传核查佐证附件并提交办结申请" },
       { id: "btn_todo_subtask", name: "生成协同子单", code: "btn:todo:subtask", type: "button", desc: "向协同处室或下级单位拆解分发协同子工单" },
       { id: "btn_todo_transfer", name: "转办与主办委派", code: "btn:todo:transfer", type: "button", desc: "跨部门或跨人员转交移交当前主办责任" },
@@ -3760,7 +3390,7 @@ var dataScopeOptions = [
     shortTag: "仅本人",
     tagCls: "scope-badge-SELF",
     icon: "user",
-    desc: "高度隔离安全模式，仅允许查阅由本人账号创建、本人受理认领或当前经办人标记为本人的工单，不可浏览同部门其他人员的办理过程。",
+    desc: "高度隔离安全模式，仅允许查阅由本人账号创建或当前经办人标记为本人的工单，不可浏览同部门其他人员的办理过程。",
     badge: "强隐私隔离",
     suitable: "推荐适用：外部协作专员（教育/住建厅）、基层网格协查人、第三方驻点人员"
   },
@@ -3803,20 +3433,20 @@ var systemRoles = [
     exportLimit: "5000",
     watermark: true,
     menuPerms: [
-      "menu_todo_list", "btn_todo_accept", "btn_todo_process", "btn_todo_subtask", "btn_todo_transfer", "btn_todo_remind", "btn_todo_export",
+      "menu_todo_list", "btn_todo_process", "btn_todo_subtask", "btn_todo_transfer", "btn_todo_remind", "btn_todo_export",
       "menu_issue_wizard", "btn_issue_create", "btn_issue_draft", "btn_issue_revoke", "btn_issue_resend",
       "menu_audit_center", "btn_audit_approve", "btn_audit_reject", "btn_audit_archive",
       "menu_stats_board", "btn_stats_drilldown", "btn_stats_efficiency", "btn_stats_export",
       "btn_settings_tpl_view", "btn_settings_dict", "btn_settings_roles"
     ],
-    permissions: { issue: true, accept: true, process: true, approve: true, dict: true, template: false, stats: true }
+    permissions: { issue: true, process: true, approve: true, dict: true, template: false, stats: true }
   },
   {
     id: "role_specialist",
     name: "舆情专班经办人",
     code: "ROLE_SPECIALIST",
     userCount: 18,
-    desc: "负责日常网络舆情监测处置、工单接收受理、填报回执、转办及生成协同子单。",
+    desc: "负责日常网络舆情监测处置、工单接收、填报回执、转办及生成协同子单。",
     dataScope: "DEPT_TREE",
     customDepts: [],
     maskSensitive: false,
@@ -3824,12 +3454,12 @@ var systemRoles = [
     exportLimit: "1000",
     watermark: true,
     menuPerms: [
-      "menu_todo_list", "btn_todo_accept", "btn_todo_process", "btn_todo_subtask", "btn_todo_transfer", "btn_todo_remind", "btn_todo_export",
+      "menu_todo_list", "btn_todo_process", "btn_todo_subtask", "btn_todo_transfer", "btn_todo_remind", "btn_todo_export",
       "menu_issue_wizard", "btn_issue_create", "btn_issue_draft", "btn_issue_revoke",
       "menu_stats_board", "btn_stats_drilldown", "btn_stats_export",
       "btn_settings_tpl_view"
     ],
-    permissions: { issue: true, accept: true, process: true, approve: false, dict: false, template: false, stats: true }
+    permissions: { issue: true, process: true, approve: false, dict: false, template: false, stats: true }
   },
   {
     id: "role_collaborator",
@@ -3844,9 +3474,9 @@ var systemRoles = [
     exportLimit: "200",
     watermark: true,
     menuPerms: [
-      "menu_todo_list", "btn_todo_accept", "btn_todo_process", "btn_todo_subtask"
+      "menu_todo_list", "btn_todo_process", "btn_todo_subtask"
     ],
-    permissions: { issue: false, accept: true, process: true, approve: false, dict: false, template: false, stats: false }
+    permissions: { issue: false, process: true, approve: false, dict: false, template: false, stats: false }
   },
   {
     id: "role_external",
@@ -3861,9 +3491,9 @@ var systemRoles = [
     exportLimit: "0",
     watermark: true,
     menuPerms: [
-      "menu_todo_list", "btn_todo_accept", "btn_todo_process"
+      "menu_todo_list", "btn_todo_process"
     ],
-    permissions: { issue: false, accept: true, process: true, approve: false, dict: false, template: false, stats: false }
+    permissions: { issue: false, process: true, approve: false, dict: false, template: false, stats: false }
   },
   {
     id: "role_admin",
@@ -3878,13 +3508,13 @@ var systemRoles = [
     exportLimit: "5000",
     watermark: true,
     menuPerms: [
-      "menu_todo_list", "btn_todo_accept", "btn_todo_process", "btn_todo_subtask", "btn_todo_transfer", "btn_todo_remind", "btn_todo_export",
+      "menu_todo_list", "btn_todo_process", "btn_todo_subtask", "btn_todo_transfer", "btn_todo_remind", "btn_todo_export",
       "menu_issue_wizard", "btn_issue_create", "btn_issue_draft", "btn_issue_revoke", "btn_issue_resend",
       "menu_audit_center", "btn_audit_approve", "btn_audit_reject", "btn_audit_archive",
       "menu_stats_board", "btn_stats_drilldown", "btn_stats_efficiency", "btn_stats_export",
       "btn_settings_tpl_view", "btn_settings_tpl_edit", "btn_settings_dict", "btn_settings_roles", "btn_settings_users"
     ],
-    permissions: { issue: true, accept: true, process: true, approve: true, dict: true, template: true, stats: true }
+    permissions: { issue: true, process: true, approve: true, dict: true, template: true, stats: true }
   }
 ];
 
@@ -3892,7 +3522,6 @@ function syncRoleLegacyPerms(role){
   if(!role || !role.permissions || !role.menuPerms) return;
   var perms = role.menuPerms;
   role.permissions.issue = perms.indexOf("btn_issue_create") > -1 || perms.indexOf("menu_issue_wizard") > -1;
-  role.permissions.accept = perms.indexOf("btn_todo_accept") > -1;
   role.permissions.process = perms.indexOf("btn_todo_process") > -1;
   role.permissions.approve = perms.indexOf("btn_audit_approve") > -1;
   role.permissions.dict = perms.indexOf("btn_settings_dict") > -1;
@@ -3944,7 +3573,6 @@ var tplWizardState = {
   selectedFieldId: "f_title",
   flowNodes: [
     { id: "n1", title: "指令发起 / 下发", role: "主管领导 / 发文专班", type: "start", desc: "填写表单基本信息，审核后下发" },
-    { id: "n2", title: "接收研判 / 受理", role: "属地网信应急组 / 责任科室", type: "accept", desc: "15分钟内确认受理并认领任务" },
     { id: "n3", title: "核查处置 / 填报", role: "一线处置员 / 业务专员", type: "process", desc: "填写低代码表单回执并上传佐证材料" },
     { id: "n4", title: "回执审批 / 办结", role: "值班长 / 审批主管", type: "archive", desc: "审核处置成效，同意归档或退回重办" }
   ]
@@ -4375,17 +4003,6 @@ function renderPcTemplatePreviewModal(){
   if(isUrgent){
     timeLimitFields = '<div class="grid-2" style="gap:16px">'+
       '<div class="wizard-field-row">'+
-        '<div class="wizard-field-label"><span style="color:#ef4444;font-weight:700;margin-right:3px">*</span><span>限时响应时间</span></div>'+
-        '<select class="select" disabled style="background:#f8fafc;color:#64748b"><option value="" selected>-- 请选择响应时限 --</option><option>15分钟内</option><option>30分钟内</option><option>1小时内</option></select>'+
-        '<div class="wizard-quick-times" style="margin-top:6px;display:flex;align-items:center;gap:6px">'+
-          '<span style="font-size:12px;color:#64748b">快捷选定：</span>'+
-          '<span class="wizard-time-chip">15分钟</span>'+
-          '<span class="wizard-time-chip">30分钟</span>'+
-          '<span class="wizard-time-chip">1小时</span>'+
-          '<span class="wizard-time-chip">2小时</span>'+
-        '</div>'+
-      '</div>'+
-      '<div class="wizard-field-row">'+
         '<div class="wizard-field-label"><span style="color:#ef4444;font-weight:700;margin-right:3px">*</span><span>限时完成时间</span></div>'+
         '<input class="input" type="text" placeholder="年/月/日 时:分 (请设置办结时限)" value="" readonly style="background:#f8fafc;color:#0f172a">'+
         '<div class="wizard-quick-times" style="margin-top:6px;display:flex;align-items:center;gap:6px;flex-wrap:wrap">'+
@@ -4551,14 +4168,6 @@ function renderPcTemplatePreviewModal(){
     },
     {
       step: 2,
-      title: "接收响应 / 签收受理",
-      role: "属地网信专班 / 责任科室",
-      timeLimit: isUrgent ? "15分钟内响应受理" : "常规工作时间内受理",
-      desc: "接收部门或专责人员收到指令提醒，点击查阅详情并执行签收受理，系统锁定当前处理人并开始计算处置计时。",
-      actions: ["查阅下发内容与附件", "确认接单/签收受理", "支持转办或生成协同子单"]
-    },
-    {
-      step: 3,
       title: "协同核查 / 回执提报",
       role: "一线处置员 / 业务专员",
       timeLimit: isUrgent ? "按倒计时限期办结" : "按常规排期办理",
@@ -4566,7 +4175,7 @@ function renderPcTemplatePreviewModal(){
       actions: ["核实涉事网络线索", "执行阻断/辟谣/加固", "结构化填写回执表单", "上传多模态证据包"]
     },
     {
-      step: 4,
+      step: 3,
       title: "处置成效 / 回执审核",
       role: "发文审批岗 / 值班长",
       timeLimit: "提交后2小时内审核",
@@ -4574,7 +4183,7 @@ function renderPcTemplatePreviewModal(){
       actions: ["质检验收处置报告", "合规性与完整性核验", "审核通过 / 退回重办"]
     },
     {
-      step: 5,
+      step: 4,
       title: "全案闭环 / 归档沉淀",
       role: "系统自动处理",
       timeLimit: "审批通过即刻归档",
@@ -4698,7 +4307,6 @@ function renderRolesPane(){
       var rPercent = Math.round((rMenuCount / (totalMenuItemCount || 1)) * 100);
 
       var hasIssue = (r.menuPerms || []).indexOf("btn_issue_create") > -1;
-      var hasAccept = (r.menuPerms || []).indexOf("btn_todo_accept") > -1;
       var hasProcess = (r.menuPerms || []).indexOf("btn_todo_process") > -1;
       var hasApprove = (r.menuPerms || []).indexOf("btn_audit_approve") > -1;
       var hasSubtask = (r.menuPerms || []).indexOf("btn_todo_subtask") > -1;
@@ -4730,7 +4338,6 @@ function renderRolesPane(){
           '</div>' +
         '</td>' +
         '<td style="text-align:center">' + (hasIssue ? '<span style="color:#059669;font-weight:800">✓</span>' : '<span style="color:#cbd5e1">-</span>') + '</td>' +
-        '<td style="text-align:center">' + (hasAccept ? '<span style="color:#059669;font-weight:800">✓</span>' : '<span style="color:#cbd5e1">-</span>') + '</td>' +
         '<td style="text-align:center">' + (hasProcess ? '<span style="color:#059669;font-weight:800">✓</span>' : '<span style="color:#cbd5e1">-</span>') + '</td>' +
         '<td style="text-align:center">' + (hasApprove ? '<span style="color:#059669;font-weight:800">✓</span>' : '<span style="color:#cbd5e1">-</span>') + '</td>' +
         '<td style="text-align:center">' + (hasSubtask ? '<span style="color:#059669;font-weight:800">✓</span>' : '<span style="color:#cbd5e1">-</span>') + '</td>' +
@@ -4762,7 +4369,6 @@ function renderRolesPane(){
             '<th style="width:140px">数据权限范围</th>' +
             '<th style="width:160px">菜单权限覆盖率</th>' +
             '<th style="width:70px;text-align:center">下达指令</th>' +
-            '<th style="width:70px;text-align:center">认领受理</th>' +
             '<th style="width:70px;text-align:center">处置回执</th>' +
             '<th style="width:70px;text-align:center">审核办结</th>' +
             '<th style="width:70px;text-align:center">生成子单</th>' +
@@ -5504,7 +5110,7 @@ function currentDetailData(){
       [sentDate,"09:00:00","查阅",(base.receiver||"武沅林")+"查阅了指令正文与下发附件"],
       [sentDate,sentTime,"指令下发",(base.sender||"张伟")+"通过专网平台下发了指令"]
     ];
-  }else if(row.status==="已退回"){
+  }else if(row.status==="���退回"){
     base.events=[
       [sentDate,"15:30:00","审批退回","齐杰审批退回了回执：【退回意见】佐证材料中缺乏账号源头取证报告及下架函，请补齐材料重报！"],
       [sentDate,"14:10:00","办理报送","武沅林初次报送了办理回执"],
@@ -5577,7 +5183,7 @@ function renderEmbeddedHandlingSection(d){
       '<div class="notice-callout-box" style="background:#f8fafc;border:1px solid #e2e8f0;display:flex;align-items:center;gap:14px;padding:18px 22px;border-radius:8px">' +
         '<div class="notice-check-circle" style="background:#e0f2fe;color:#0284c7;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0">'+ico("user-check",18)+'</div>' +
         '<div style="font-size:13.5px;color:#334155;line-height:1.6">' +
-          '<b>当前指令正由【'+escapeHtml(currentHandlerName)+'】受理及推进办理中</b>' +
+          '<b>当前指令正由【'+escapeHtml(currentHandlerName)+'】办理及推进中</b>' +
           '<p style="margin:4px 0 0;color:#64748b;font-size:12.5px">当前单据处于详情查阅模式，待经办人完成办理并提交回执后，回执内容与审批记录将自动同步呈现在此处。</p>' +
         '</div>' +
       '</div>' +
@@ -5589,38 +5195,11 @@ function renderEmbeddedHandlingSection(d){
     return '<section class="card detail-section receipt-fill-section"><div class="receipt-section-head"><h3 class="receipt-section-title"><span class="receipt-title-dot" style="background:#059669"></span><span>通知阅知确认</span></h3><span class="receipt-status-pill done">'+ico("book-open",13)+' 公文阅知类通知</span></div><div class="notice-callout-box"><div class="notice-check-circle">✓</div><div><b>本通知为公文阅知类指令，无需填报回执表单</b><p>请仔细查阅上述公文要求及附件内容，确认知悉后可直接点击底部【确认阅知并办结】以完成节点流转。</p></div></div></section>';
   }
 
-  var isAccepted=!!(state.acceptedMap&&state.acceptedMap[d.row.key]) || !!d.row.accepted;
-  if(!isAccepted){
-    return '<section class="card detail-section receipt-fill-section">' +
-      '<div class="receipt-section-head">' +
-        '<h3 class="receipt-section-title"><span class="receipt-title-dot"></span><span>待处理表单：办理回执填报</span></h3>' +
-        '<span class="receipt-status-pill locked">'+ico("lock",13)+' 待受理 (表单只读锁定)</span>' +
-      '</div>' +
-      '<div class="receipt-form-box locked">' +
-        '<div class="form-locked-banner">'+ico("alert-circle",20)+'<div><b>当前任务处于待受理状态，表单字段已锁定</b><p>按照协同办理规范，请先核对指令要求与附件材料，点击底部操作栏【受理】按钮激活编辑权限后再行填报。</p></div></div>' +
-        '<div class="receipt-field-stacked locked" style="opacity:0.65;pointer-events:none">' +
-          '<label class="receipt-label-top"><span class="receipt-label-name">处理说明</span><span class="receipt-label-req">*</span><span class="receipt-label-hint">（点击底部【受理】按钮激活后可录入处理说明）</span></label>' +
-          '<textarea class="textarea" disabled placeholder="点击底部【受理】按钮激活后可录入处理说明..." style="background:#f1f5f9;color:#94a3b8;cursor:not-allowed;height:88px;resize:none;width:100%;box-sizing:border-box"></textarea>' +
-        '</div>' +
-        '<div class="receipt-uploads-grid" style="opacity:0.65;pointer-events:none">' +
-          '<div class="receipt-field-stacked locked">' +
-            '<label class="receipt-label-top"><span class="receipt-label-name">佐证图片</span><span class="receipt-label-hint">（支持 jpg、png 格式）</span></label>' +
-            '<div class="upload" style="background:#f8fafc;border:1px dashed #cbd5e1;cursor:not-allowed;height:84px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#94a3b8;font-size:12px;border-radius:6px;gap:6px">'+ico("image",20)+' <span>受理后点击上传佐证截图</span></div>' +
-          '</div>' +
-          '<div class="receipt-field-stacked locked">' +
-            '<label class="receipt-label-top"><span class="receipt-label-name">处置报告附件</span><span class="receipt-label-hint">（支持 docx、pdf、xlsx 格式）</span></label>' +
-            '<div class="upload" style="background:#f8fafc;border:1px dashed #cbd5e1;cursor:not-allowed;height:84px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#94a3b8;font-size:12px;border-radius:6px;gap:6px">'+ico("paperclip",20)+' <span>受理后点击上传结报附件</span></div>' +
-          '</div>' +
-        '</div>' +
-      '</div>' +
-    '</section>';
-  }
-
   var defaultNoteVal=d.status==="已退回"?"已根据审批退回意见补充权威机构溯源核实结论，涉事虚假谣言发布账号已依法完成取证并限期下架，网络次生不良影响已有效阻断。":"已组织专班对涉网要素开展系统排查研判，涉事信源及传播链条已定位，正面引导与管控处置举措已全面落实。";
   return '<section class="card detail-section receipt-fill-section">' +
     '<div class="receipt-section-head">' +
       '<h3 class="receipt-section-title"><span class="receipt-title-dot" style="background:#10b981"></span><span>待处理表单：办理回执填报</span></h3>' +
-      '<span class="receipt-status-pill editing">'+ico("edit-3",13)+' 已受理正在填报中</span>' +
+      '<span class="receipt-status-pill editing">'+ico("edit-3",13)+' 正在填报中</span>' +
     '</div>' +
     '<div class="receipt-form-box highlight-active">' +
       '<div class="receipt-field-stacked">' +
@@ -5693,7 +5272,6 @@ function getFlowNodes(d){
   var senderName = d.sender || "张伟";
   var senderOrg = d.org || "市公安局情指中心";
   var deadline = d.deadline || row.deadline || "2026-09-15 18:00:00";
-  var isAccepted = !!(state.acceptedMap && state.acceptedMap[row.key]) || row.accepted === true || d.status === "待审批" || d.status === "已归档";
   var isRejected = (d.status === "已退回" || !!row.rejected || row.key === "todo-returned");
 
   var tTransfer = addSeconds(tSent, 120);
@@ -5705,8 +5283,6 @@ function getFlowNodes(d){
   var tAccept = addSeconds(tView, 465);
   var acceptTimeStr = formatDateTime(tAccept);
 
-  var acceptedPerson = row.acceptedPerson || receiverName || currentUser;
-  var acceptDuration = row.acceptedDuration || "12分05秒";
   var handleCountdown = row.handleCountdown || "03小时45分";
 
   var rawNodes = [];
@@ -5727,8 +5303,7 @@ function getFlowNodes(d){
       type: "submitted",
       title: "下发限时要求",
       items: [
-        { label: "响应时限规范", value: "要求下发15分钟内完成签收受理" },
-        { label: "办结截止时限", value: deadline, highlight: true }
+        { label: "办结截止��限", value: deadline, highlight: true }
       ]
     }
   });
@@ -5752,7 +5327,7 @@ function getFlowNodes(d){
         title: "流转交接时效",
         items: [
           { label: "转交节点时间", value: transferTimeStr },
-          { label: "响应时效规则", value: "顺延交接承办责任人，重新激活15分钟受理时限" }
+          { label: "交接规则", value: "顺延交接承办责任人，由新责任人继续办理" }
         ]
       }
     });
@@ -5772,59 +5347,13 @@ function getFlowNodes(d){
     opinion: "调阅指令通报正文与下发佐证附件材料，已确认通报内容与处置工作要求。",
     timeLimitInfo: {
       type: "accepted",
-      title: "查阅响应时效",
+      title: "查阅记录",
       items: [
         { label: "调阅时间", value: viewTimeStr },
-        { label: "调阅时效", value: "用时4分20秒（在15分钟响应时限内完成查阅）", highlight: true }
+        { label: "调阅耗时", value: "用时4分20秒", highlight: true }
       ]
     }
   });
-
-  // 4. 任务受理
-  if(isAccepted){
-    rawNodes.push({
-      node: "任务受理",
-      badgeCls: "finish",
-      icon: "check-circle-2",
-      person: acceptedPerson,
-      unit: "台湾省网信办",
-      arriveTime: viewTimeStr,
-      leaveTime: acceptTimeStr,
-      date: acceptTimeStr.split(" ")[0],
-      time: acceptTimeStr.split(" ")[1],
-      opinion: row.acceptedNote || "已调阅通报正文与下发附件材料，确认接单受理并激活回执填报权限，启动处置流转。",
-      timeLimitInfo: {
-        type: "accepted",
-        title: "响应时限履约记录",
-        items: [
-          { label: "响应时限要求", value: "15分钟内" },
-          { label: "实际响应耗时", value: acceptDuration, highlight: true },
-          { label: "实际受理时间", value: acceptTimeStr }
-        ]
-      }
-    });
-  } else {
-    rawNodes.push({
-      node: "待受理",
-      badgeCls: "current",
-      icon: "clock",
-      person: receiverName,
-      unit: "台湾省网信办",
-      arriveTime: viewTimeStr,
-      leaveTime: '<span class="flow-status-chip" style="background:#fef3c7;color:#b45309">等待受理</span>',
-      date: viewTimeStr.split(" ")[0],
-      time: viewTimeStr.split(" ")[1],
-      opinion: "当前指令处于待受理状态，回执表单处于锁定只读状态。请经办责任人核对后点击底部【受理】按钮激活编辑权限并启动处置办理。",
-      timeLimitInfo: {
-        type: "waiting",
-        title: "响应时限倒计时记录",
-        items: [
-          { label: "响应时限要求", value: "15分钟内" },
-          { label: "处置截止时限", value: deadline }
-        ]
-      }
-    });
-  }
 
   // 5. 协同子单 (如果有子单)
   if(row.childKey){
@@ -5851,7 +5380,7 @@ function getFlowNodes(d){
 
   // 6. 处置办理 / 驳回重新办理 / 待阅
   if(d.status === "待处理"){
-    if(isAccepted){
+    {
       rawNodes.push({
         node: "处置办理",
         badgeCls: "current",
@@ -6073,7 +5602,7 @@ function getFlowNodes(d){
     });
   }
 
-  // 9. 用户动态操作标注（取消受理、新增子单等）
+  // 9. 用户动态操作标注（新增子单等）
   var userAnnotations = (state.annotations && state.annotations[row.key]) || [];
   if(userAnnotations.length){
     userAnnotations.forEach(function(ann){
@@ -6354,32 +5883,13 @@ function detailActionBar(status,source){
     '</div>';
   }
 
-  var isAccepted = !!(state.acceptedMap && state.acceptedMap[row.key]) || !!row.accepted;
-
-  // 待受理状态：最左边增加传阅按钮，右侧为受理
-  if(!isAccepted){
-    return '<div class="detail-action-bar">' +
-      '<div class="detail-action-bar-inner" style="justify-content:space-between">' +
-        '<button class="btn light" data-action="detail-open-circulate" style="color:#005c58;border-color:#b5e5e2;background:#eef8f7;padding:0 20px;height:38px;font-size:13px;font-weight:700;border-radius:6px;cursor:pointer;display:inline-flex;align-items:center;gap:6px">' +
-          ico("share-2", 14) + ' 传阅' +
-        '</button>' +
-        '<button class="btn action-teal" data-action="detail-accept" style="background:var(--teal);border-color:var(--teal);color:#ffffff;padding:0 36px;height:40px;font-size:14px;font-weight:800;border-radius:6px;box-shadow:0 4px 12px rgba(0,152,147,0.35);cursor:pointer;display:inline-flex;align-items:center;gap:8px">' +
-          ico("check-square", 16) + ' 受理' +
-        '</button>' +
-      '</div>' +
-    '</div>';
-  }
-
-  // 受理完成之后，最左侧增加传阅按钮，右侧从左到右分别为：取消受理，生成子单，转办，提交结果。
+  // 最左侧为传阅按钮，右侧从左到右分别为：生成子单，转办，提交结果。
   return '<div class="detail-action-bar">' +
     '<div class="detail-action-bar-inner" style="justify-content:space-between">' +
       '<button class="btn light" data-action="detail-open-circulate" style="color:#005c58;border-color:#b5e5e2;background:#eef8f7;padding:0 20px;height:38px;font-size:13px;font-weight:700;border-radius:6px;cursor:pointer;display:inline-flex;align-items:center;gap:6px">' +
         ico("share-2", 14) + ' 传阅' +
       '</button>' +
       '<div style="display:flex;gap:12px;align-items:center">' +
-        '<button class="btn light" data-action="detail-cancel-accept" style="color:#64748b;border-color:#cbd5e1;padding:0 20px;height:38px;font-size:13px;font-weight:600;border-radius:6px;cursor:pointer;display:inline-flex;align-items:center;gap:6px">' +
-          ico("undo-2", 14) + ' 取消受理' +
-        '</button>' +
         '<button class="btn light" data-action="detail-open-subtask" style="color:#0284c7;border-color:#bae6fd;background:#f0f9ff;padding:0 20px;height:38px;font-size:13px;font-weight:600;border-radius:6px;cursor:pointer;display:inline-flex;align-items:center;gap:6px">' +
           ico("git-fork", 14) + ' 生成子单' +
         '</button>' +
@@ -6418,7 +5928,7 @@ function renderRedispatchDetailPage(d){
         '<span class="tag" style="background:#ea580c;color:#ffffff;padding:2px 10px;border-radius:4px;font-weight:700;font-size:12px">待重新派发</span>' +
       '</div>' +
       '<div style="font-size:13.5px;color:#475569;line-height:1.6">' +
-        '接收人<b>【' + escapeHtml(d.row.returnedBy || "武乙") + '】</b>在受理阶段取消受理，工单已退回至发起人节点。请在此修改指令内容及接收对象，重新发起派发。' +
+        '接收人<b>【' + escapeHtml(d.row.returnedBy || "武乙") + '】</b>已将工单退回至发起人节点。请在此修改指令内容及接收对象，重新发起派发。' +
       '</div>' +
     '</section>' +
 
@@ -6504,7 +6014,7 @@ function renderRedispatchDetailPage(d){
         '<div style="display:flex;flex-direction:column;gap:16px;opacity:0.75;pointer-events:none">' +
           '<div>' +
             '<label style="display:block;font-size:13px;font-weight:700;color:#475569;margin-bottom:6px">处理说明 <span style="color:#e11d48">*</span> <span style="font-size:12px;font-weight:400;color:#94a3b8">（接收人办理时填写）</span></label>' +
-            '<textarea class="textarea" disabled placeholder="待接收人受理后录入处置说明与办理进度..." style="width:100%;height:88px;padding:10px 12px;font-size:13px;line-height:1.6;background:#ffffff;border:1px solid #cbd5e1;border-radius:6px;box-sizing:border-box;resize:none;color:#94a3b8;cursor:not-allowed"></textarea>' +
+            '<textarea class="textarea" disabled placeholder="待接收人办理后录入处置说明与办理进度..." style="width:100%;height:88px;padding:10px 12px;font-size:13px;line-height:1.6;background:#ffffff;border:1px solid #cbd5e1;border-radius:6px;box-sizing:border-box;resize:none;color:#94a3b8;cursor:not-allowed"></textarea>' +
           '</div>' +
 
           '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">' +
@@ -6538,13 +6048,10 @@ function renderDetail(){
     return renderRedispatchDetailPage(d);
   }
   var origin=state.detailSource==="sent"||d.status==="待审批"?'<span class="tag origin">下发</span>':"",timeInfo="";
-  var isAccepted=!!(state.acceptedMap&&state.acceptedMap[d.row.key]) || !!d.row.accepted;
   var isRejected=(d.status==="已退回" || !!d.row.rejected || d.row.key==="todo-returned");
   var displayStatus=d.status;
   if(d.status==="已退回"){
     displayStatus="待处理";
-  }else if(d.status==="待处理"){
-    displayStatus=isAccepted?"待处理":"待受理";
   }
 
   if(d.requirement==="限时回执" && (d.status==="待处理" || d.status==="已退回" || isRejected)){
@@ -6553,12 +6060,6 @@ function renderDetail(){
         timeInfo=' '+renderUnifiedCountdownChip("handle", d.row.handleOverdue||d.row.overdueHours, true);
       }else{
         timeInfo=' '+renderUnifiedCountdownChip("handle", d.row.handleCountdown||"15小时00分", false);
-      }
-    } else if(!isAccepted){
-      if(d.row.responseOverdue){
-        timeInfo=' '+renderUnifiedCountdownChip("response", d.row.responseOverdue, true);
-      }else{
-        timeInfo=' '+renderUnifiedCountdownChip("response", d.row.responseCountdown||"00小时15分", false);
       }
     } else {
       if(d.row.handleOverdue || d.row.overdueHours){
@@ -6735,35 +6236,6 @@ function bindActions(){
       showToast("审批通过！指令已成功归档结案");
       render();
     }
-    else if(a==="detail-cancel-accept"){
-      openModal("cancel-accept");
-    }
-    else if(a==="confirm-cancel-accept"){
-      var curRow = currentDetailTask();
-      var nowStr = formatDeadlineDate(Date.now());
-      if(curRow){
-        curRow.status = "待重新派发";
-        curRow.accepted = false;
-        curRow.processor = curRow.sender || "武甲";
-        curRow.returnedBy = currentUser;
-        curRow.returnedTime = nowStr;
-        if(state.acceptedMap) delete state.acceptedMap[curRow.key];
-        if(!state.annotations[curRow.key]) state.annotations[curRow.key] = [];
-        state.annotations[curRow.key].unshift([
-          nowStr.split(" ")[0],
-          nowStr.split(" ")[1],
-          "取消受理退回",
-          currentUser + " 取消了任务受理，工单已回退至发起人节点（" + (curRow.sender || "武甲") + "），状态变更为【待重新派发】"
-        ]);
-      }
-      document.getElementById("modalRoot").classList.remove("show");
-      document.getElementById("modalRoot").innerHTML = "";
-      state.page = "todo";
-      state.mySubPage = state.detailSource || "todo";
-      showToast("取消受理成功，指令已回退至下发节点。");
-      render();
-      window.scrollTo(0,0);
-    }
     else if(a==="open-redispatch-recipient-modal"){
       recipientReturn = "redispatch";
       var curRow = currentDetailTask();
@@ -6807,7 +6279,6 @@ function bindActions(){
 
       curRow.status = "待处理";
       curRow.processor = "-";
-      curRow.accepted = false;
       curRow.returnedBy = null;
       var nowStr = formatDeadlineDate(Date.now());
       curRow.time = nowStr;
@@ -6925,7 +6396,6 @@ function bindActions(){
       var curRow = currentDetailTask();
       var nowStr = formatDeadlineDate(Date.now());
       curRow.status = "待处理";
-      curRow.accepted = true;
       curRow.rejected = true;
       curRow.rejectReason = reason;
       if(!state.annotations[curRow.key]) state.annotations[curRow.key] = [];
@@ -6968,10 +6438,8 @@ function bindActions(){
         req: "限时回执",
         status: "待处理",
         origin: "下发",
-        accepted: false,
         parentKey: curRow.key,
         deadline: subDeadline,
-        responseCountdown: "00小时20分",
         source: curRow.source,
         description: (subNote ? "【分工说明】" + subNote + "\n" : "") + "【父指令内容】" + (curRow.description || curRow.title),
         files: curRow.files || []
@@ -7001,8 +6469,6 @@ function bindActions(){
 
       curRow.receiver = toPerson;
       curRow.processor = "-";
-      curRow.accepted = false;
-      if(state.acceptedMap) delete state.acceptedMap[curRow.key];
 
       curRow.transferInfo = {
         from: currentUser,
@@ -7023,32 +6489,6 @@ function bindActions(){
       showToast("已成功转办给【" + selectedTransferPerson + "】！");
       state.page = "todo";
       render();
-    }
-else if(a==="detail-accept"){
-      if(!state.acceptedMap) state.acceptedMap={};
-      state.acceptedMap[state.detailKey]=true;
-      var curRow=currentDetailTask();
-      if(curRow){
-        curRow.accepted=true;
-        curRow.responseOverdue="";
-        if(!curRow.acceptedTime){
-          curRow.acceptedTime = formatDeadlineDate(Date.now());
-        }
-        curRow.acceptedPerson = currentUser || "武乙";
-        curRow.acceptedDuration = curRow.acceptedDuration || "12分15秒";
-        curRow.acceptedNote = "已调阅通报正文与下发附件材料，确认接单受理并激活回执填报权限，启动处置流转。";
-        if(!curRow.handleCountdown && !curRow.handleOverdue){
-          curRow.handleCountdown="03小时45分";
-        }
-      }
-      showToast("任务已成功受理！限时履约记录已生成，表单编辑权限已激活！");
-      render();
-      var box=document.querySelector(".receipt-form-box");
-      if(box){
-        box.scrollIntoView({behavior:"smooth",block:"center"});
-        var ta=box.querySelector("#detail-receipt-note");
-        if(ta){ ta.focus(); }
-      }
     }
     else if(a==="detail-submit-receipt"){
       var ta=document.getElementById("detail-receipt-note");
@@ -8138,7 +7578,7 @@ var wizardRecipientDimensionData = {
     { id: "role-4", type: "角色", name: "数据审计员（Auditor）", count: "5人", sub: "具备流转日志审计、批注及全域统计穿透权限", people: ["张若英", "Dennis.Chin*秦晓昊"] }
   ],
   person: [
-    { id: "usr-1", type: "人员", name: "武丁", role: "处置审批人 / 综合科", org: "台湾省网信办", phone: "138****0001", avatar: "武", isInternal: true },
+    { id: "usr-1", type: "人员", name: "武丁", role: "处置审批人 / 综合科", org: "台��省网信办", phone: "138****0001", avatar: "武", isInternal: true },
     { id: "usr-2", type: "人员", name: "齐杰", role: "应急值班长 / 舆情科", org: "台湾省网信办", phone: "138****0002", avatar: "齐", isInternal: true },
     { id: "usr-3", type: "人员", name: "武丙", role: "一线处置员 / SD组", org: "台湾省网信办", phone: "138****0003", avatar: "武", isInternal: true },
     { id: "usr-4", type: "人员", name: "谭星", role: "一线处置员 / R&D组", org: "台湾省网信办", phone: "138****0004", avatar: "谭", isInternal: true },
@@ -8625,22 +8065,9 @@ function renderIssueFormPage(){
           '<label class="issue-field-label required"><span>紧急程度</span></label>' +
           '<select class="select" id="issue-form-urgency" data-issue-page-field="urgency" data-action="wizard-change-urgency">' +
             '<option value="" ' + (wizardState.formData.urgency===""?"selected":"") + ' disabled>-- 请选择紧急程度 --</option>' +
-            '<option value="加急" ' + (wizardState.formData.urgency==="加急"?"selected":"") + '>加急（推荐：30分钟响应 / 4小时完成）</option>' +
-            '<option value="特急" ' + (wizardState.formData.urgency==="特急"?"selected":"") + '>特急（推荐：15分钟响应 / 2小时完成）</option>' +
-            '<option value="平急" ' + (wizardState.formData.urgency==="平急"?"selected":"") + '>平急（推荐：1小时响应 / 24小时完成）</option>' +
-          '</select>' +
-        '</div>' +
-        '<div class="wizard-field-row" style="margin-bottom:0">' +
-          '<label class="issue-field-label required"><span>限时响应时间</span></label>' +
-          '<select class="select" id="issue-form-responsetime" data-issue-page-field="responseTime" data-action="wizard-change-responsetime">' +
-            '<option value="" ' + (wizardState.formData.responseTime===""?"selected":"") + ' disabled>-- 请选择限时响应时间 --</option>' +
-            '<option value="15分钟内" ' + (wizardState.formData.responseTime==="15分钟内"?"selected":"") + '>15分钟内（特急推荐）</option>' +
-            '<option value="30分钟内" ' + (wizardState.formData.responseTime==="30分钟内"?"selected":"") + '>30分钟内（加急推荐）</option>' +
-            '<option value="1小时内" ' + (wizardState.formData.responseTime==="1小时内"?"selected":"") + '>1小时内（平急推荐）</option>' +
-            '<option value="2小时内" ' + (wizardState.formData.responseTime==="2小时内"?"selected":"") + '>2小时内</option>' +
-            '<option value="4小时内" ' + (wizardState.formData.responseTime==="4小时内"?"selected":"") + '>4小时内</option>' +
-            '<option value="12小时内" ' + (wizardState.formData.responseTime==="12小时内"?"selected":"") + '>12小时内</option>' +
-            '<option value="24小时内" ' + (wizardState.formData.responseTime==="24小时内"?"selected":"") + '>24小时内</option>' +
+            '<option value="加急" ' + (wizardState.formData.urgency==="加急"?"selected":"") + '>加急（推荐：4小时完成）</option>' +
+            '<option value="特急" ' + (wizardState.formData.urgency==="特急"?"selected":"") + '>特急（推荐：2小时完成）</option>' +
+            '<option value="平急" ' + (wizardState.formData.urgency==="平急"?"selected":"") + '>平急（推荐：24小时完成）</option>' +
           '</select>' +
         '</div>' +
       '</div>' +
@@ -8653,9 +8080,6 @@ function renderIssueFormPage(){
           '<span class="wizard-time-chip" data-action="quick-deadline" data-hours="4">+4小时（推荐）</span>' +
           '<span class="wizard-time-chip" data-action="quick-deadline" data-hours="8">+8小时</span>' +
           '<span class="wizard-time-chip" data-action="quick-deadline" data-hours="24">+24小时</span>' +
-        '</div>' +
-        '<div style="font-size:12px;color:#64748b;margin-top:6px;display:flex;align-items:center;gap:4px">' +
-          ico("clock", 13) + ' <span>响应签收要求：责任单位须在指令下发后 <b>' + (wizardState.formData.responseTime || '30分钟内') + '</b> 完成签收受理。</span>' +
         '</div>' +
       '</div>' +
     '</div>'
@@ -8782,7 +8206,7 @@ function renderIssueStepper(){
     { num: 1, label: "选择模板" },
     { num: 2, label: "填写信息" },
     { num: 3, label: "选择接收人" },
-    { num: 4, label: "执行发送" }
+    { num: 4, label: "执行发��" }
   ];
   var current = wizardState.step;
   if(current === 5){
@@ -8935,26 +8359,6 @@ function renderIssueWizard(){
     if(isUrgent){
       timeLimitBlock = '<div class="grid-2" style="gap:16px">'+
         '<div class="wizard-field-row">'+
-          '<div class="wizard-field-label">'+reqStar+'<span>限时响应时间</span></div>'+
-          '<select class="select" data-wizard-field="responseTime" data-action="wizard-change-responsetime">'+
-            '<option value="" '+(wizardState.formData.responseTime===""?"selected":"")+' disabled>-- 请选择限时响应时间 --</option>'+
-            '<option value="15分钟内" '+(respVal==="15分钟内"?"selected":"")+'>15分钟内（特急推荐）</option>'+
-            '<option value="30分钟内" '+(respVal==="30分钟内"?"selected":"")+'>30分钟内（加急推荐）</option>'+
-            '<option value="1小时内" '+(respVal==="1小时内"?"selected":"")+'>1小时内（平急推荐）</option>'+
-            '<option value="2小时内" '+(respVal==="2小时内"?"selected":"")+'>2小时内</option>'+
-            '<option value="4小时内" '+(respVal==="4小时内"?"selected":"")+'>4小时内</option>'+
-            '<option value="12小时内" '+(respVal==="12小时内"?"selected":"")+'>12小时内</option>'+
-            '<option value="24小时内" '+(respVal==="24小时内"?"selected":"")+'>24小时内</option>'+
-          '</select>'+
-          '<div class="wizard-quick-times" style="margin-top:6px;display:flex;align-items:center;gap:6px">'+
-            '<span style="font-size:12px;color:#64748b">快捷选定：</span>'+
-            '<span class="wizard-time-chip '+(respVal==="15分钟内"?"active":"")+'" data-action="quick-response" data-time="15分钟内">15分钟</span>'+
-            '<span class="wizard-time-chip '+(respVal==="30分钟内"?"active":"")+'" data-action="quick-response" data-time="30分钟内">30分钟</span>'+
-            '<span class="wizard-time-chip '+(respVal==="1小时内"?"active":"")+'" data-action="quick-response" data-time="1小时内">1小时</span>'+
-            '<span class="wizard-time-chip '+(respVal==="2小时内"?"active":"")+'" data-action="quick-response" data-time="2小时内">2小时</span>'+
-          '</div>'+
-        '</div>'+
-        '<div class="wizard-field-row">'+
           '<div class="wizard-field-label">'+reqStar+'<span>限时完成时间</span></div>'+
           '<input class="input" type="datetime-local" data-wizard-field="deadline" value="'+deadDtLocal+'" placeholder="请选择限时完成时间" style="font-family:inherit;color:#0f172a">'+
           '<div class="wizard-quick-times" style="margin-top:6px;display:flex;align-items:center;gap:6px;flex-wrap:wrap">'+
@@ -8981,9 +8385,9 @@ function renderIssueWizard(){
 
     var urgencyOptions = isUrgent ? (
       '<option value="" '+(wizardState.formData.urgency===""?"selected":"")+' disabled>-- 请选择紧急程度 --</option>'+
-      '<option value="加急" '+(wizardState.formData.urgency==="加急"?"selected":"")+'>加急（推荐：30分钟响应 / 4小时完成）</option>'+
-      '<option value="特急" '+(wizardState.formData.urgency==="特急"?"selected":"")+'>特急（推荐：15分钟响应 / 2小时完成）</option>'+
-      '<option value="平急" '+(wizardState.formData.urgency==="平急"?"selected":"")+'>平急（推荐：1小时响应 / 24小时完成）</option>'
+      '<option value="加急" '+(wizardState.formData.urgency==="加急"?"selected":"")+'>加急（推荐：4小时完成）</option>'+
+      '<option value="特急" '+(wizardState.formData.urgency==="特急"?"selected":"")+'>特急（推荐：2小时完成）</option>'+
+      '<option value="平急" '+(wizardState.formData.urgency==="平急"?"selected":"")+'>平急（推荐：24小时完成）</option>'
     ) : (
       '<option value="" '+(wizardState.formData.urgency===""?"selected":"")+' disabled>-- 请选择紧急程度 --</option>'+
       '<option value="加急" '+(wizardState.formData.urgency==="加急"?"selected":"")+'>加急</option>'+
@@ -9335,7 +8739,7 @@ function revokeTransferModal(){
 function groupSimple(type){
   if(type==="group-add")return modalFrame("新增分组",'<div class="field"><div class="field-label required">分组名称</div><input class="input" placeholder="请输入分组名称"><span style="grid-column:2;text-align:right;color:#9aa4ac">0 / 50</span></div>',"");
   if(type==="group-delete")return '<div class="modal"><div class="modal-body" style="padding:45px 32px 20px"><h2>ⓘ　确认删除?</h2><p style="color:#667580;margin:25px 35px">您确认删除该分组吗？删除后不可恢复，请谨慎操作</p></div><div class="modal-foot"><button class="btn" data-close>取消</button><button class="btn primary" data-close>确定</button></div></div>';
-  return modalFrame("调整分组",'<div class="field"><div class="field-label required">调整到</div><div style="display:flex;gap:12px"><select class="select"><option>请选择调整到的分组</option></select><button class="btn light" data-open="group-add">新增</button></div></div>',"")
+  return modalFrame("调整分组",'<div class="field"><div class="field-label required">调整到</div><div style="display:flex;gap:12px"><select class="select"><option>请选择调整到的分组</option></select><button class="btn light" data-open="group-add">新��</button></div></div>',"")
 }
 
 // === 流程处理模态框 ===
@@ -9371,35 +8775,6 @@ function rejectModal(){
       '<button class="btn light" data-close style="padding:0 18px;height:34px;font-size:13px">取消</button>' +
       '<button class="btn danger" data-action="confirm-reject-instruction" style="background:#e11d48;border-color:#e11d48;color:#ffffff;padding:0 20px;height:34px;font-size:13px;font-weight:700;display:inline-flex;align-items:center;gap:6px">' +
         ico("rotate-ccw", 14) + ' 确认退回重办' +
-      '</button>' +
-    '</div>' +
-  '</div>';
-}
-
-function cancelAcceptConfirmModal(){
-  var curRow = currentDetailTask() || {};
-  return '<div class="modal" style="width:500px;max-width:92vw;border-radius:8px;border:1px solid #cbd5e1;box-shadow:0 12px 36px rgba(15,23,42,0.22);overflow:hidden">' +
-    '<div class="modal-head" style="height:52px;min-height:52px;padding:0 20px;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;justify-content:space-between;background:#fff">' +
-      '<div style="display:flex;align-items:center;gap:8px;font-weight:700;font-size:16px;color:#0f172a">' +
-        '<span style="color:#ea580c;display:flex">' + ico("alert-triangle", 18) + '</span>' +
-        '<span>取消受理确认</span>' +
-      '</div>' +
-      '<button class="close" data-close style="display:flex;align-items:center;justify-content:center;height:32px;width:32px;border:none;background:transparent;cursor:pointer;color:#64748b;border-radius:4px">' + ico("x", 18) + '</button>' +
-    '</div>' +
-    '<div class="modal-body" style="padding:22px 24px">' +
-      '<div style="background:#fff7ed;border:1px solid #fed7aa;border-left:4px solid #ea580c;border-radius:6px;padding:14px 16px;font-size:13.5px;color:#334155;line-height:1.65">' +
-        '<div style="font-weight:700;color:#c2410c;font-size:14px;margin-bottom:6px">是否确认取消受理该指令工单？</div>' +
-        '<div>取消受理将使工单<span style="color:#dc2626;font-weight:700">回退至发起人节点</span>，如需他人办理，可使用<b>转办</b>。如需他人协助办理，可使用<b>生成子单</b>，是否取消受理？</div>' +
-      '</div>' +
-      '<div style="margin-top:14px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:10px 14px;font-size:12.5px;color:#64748b;display:flex;flex-direction:column;gap:4px">' +
-        '<div style="display:flex;align-items:center;gap:6px"><span>• <b>转办功能</b>：直接转交其他责任人员独立全权处置</span></div>' +
-        '<div style="display:flex;align-items:center;gap:6px"><span>• <b>生成子单</b>：下发协同子工单，多人分工联合排查处置</span></div>' +
-      '</div>' +
-    '</div>' +
-    '<div class="modal-foot" style="background:#f8fafc;border-top:1px solid #e2e8f0;height:54px;min-height:54px;padding:0 20px;display:flex;align-items:center;justify-content:flex-end;gap:10px">' +
-      '<button class="btn light" data-close style="padding:0 18px;height:36px;font-size:13px;border-radius:4px">暂不取消</button>' +
-      '<button class="btn danger" data-action="confirm-cancel-accept" style="background:#ea580c;border-color:#ea580c;color:#ffffff;padding:0 22px;height:36px;font-size:13px;font-weight:700;border-radius:4px;display:inline-flex;align-items:center;gap:6px">' +
-        ico("undo-2", 14) + ' 确认取消受理' +
       '</button>' +
     '</div>' +
   '</div>';
@@ -9459,7 +8834,7 @@ function subInstructionModal(){
       '<label style="font-weight:700;color:#1e293b;font-size:13.5px">子单说明</label>' +
       '<span style="font-size:12px;color:#94a3b8"><span id="subtask-note-counter">0</span> / 500</span>' +
     '</div>' +
-    '<textarea id="subtask-note-input" class="textarea" maxlength="500" placeholder="请录入派发给协同责任人的具体子单工作说明、排查要素及取证重点（选填）..." style="width:100%;height:95px;resize:none;border:1px solid #cbd5e1;border-radius:4px;padding:10px 12px;font-size:13px;line-height:1.5;box-sizing:border-box" oninput="document.getElementById(\'subtask-note-counter\').textContent=this.value.length"></textarea>' +
+    '<textarea id="subtask-note-input" class="textarea" maxlength="500" placeholder="请录入派发给协同责任人的具体子单工作说明、排��要素及取证重点（选填）..." style="width:100%;height:95px;resize:none;border:1px solid #cbd5e1;border-radius:4px;padding:10px 12px;font-size:13px;line-height:1.5;box-sizing:border-box" oninput="document.getElementById(\'subtask-note-counter\').textContent=this.value.length"></textarea>' +
   '</div>';
 
   return '<div class="modal subtask-modal" style="width:720px;max-width:92vw;border-radius:8px;border:1px solid #cbd5e1;box-shadow:0 12px 36px rgba(15,23,42,0.22);overflow:hidden">' +
@@ -9538,7 +8913,7 @@ var selectedCirculatePersons = ["武丙", "武乙"];
 function circulateModal(){
   var curRow = currentDetailTask();
   var defaultTitle = curRow ? curRow.title : "工单公文";
-  var personOptions = ["武甲", "武乙", "武丙", "武丁", "陈乾喜", "齐杰", "谭星", "张若英"];
+  var personOptions = ["武甲", "武乙", "武��", "武丁", "陈乾喜", "齐杰", "谭星", "张若英"];
   
   var personChips = personOptions.map(function(p){
     var isSel = selectedCirculatePersons.indexOf(p) > -1;
@@ -9752,7 +9127,6 @@ function openModal(type){
   else if(type==="form-preview") html = renderFormPreviewModal();
   else if(type==="pc-template-preview" || type==="preview-tpl") html = renderPcTemplatePreviewModal();
   else if(type==="reject") html = rejectModal();
-  else if(type==="cancel-accept") html = cancelAcceptConfirmModal();
   else if(type==="subtask") html = subInstructionModal();
   else if(type==="transfer-person") html = transferPersonModal();
   else if(type==="circulate") html = circulateModal();
@@ -12003,7 +11377,7 @@ document.addEventListener("change",function(e){
       var now = new Date();
       var hours = 4;
       if(urg === "特急"){
-        wizardState.formData.responseTime = "15分钟内";
+        wizardState.formData.responseTime = "15分���内";
         hours = 2;
       } else if(urg === "加急"){
         wizardState.formData.responseTime = "30分钟内";
