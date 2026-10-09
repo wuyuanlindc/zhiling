@@ -7,7 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="vendor/lucide.min.js"></script>
+  <script>window.lucide = window.lucide || { createIcons: function () {} };</script>
   <style>
     :root {
       --primary: #1677ff;
@@ -4931,7 +4932,7 @@
             { id: 6, group: '台湾省网信办', name: 'xjw', alias: 'Abyss', avatar: 'https://api.dicebear.com/7.x/bottts/svg?seed=xjw', isFollow: '是', category: '舆情处置 / 错误表述', categories: ['舆情处置', '错误表述'], permission: '所属分组' },
             { id: 7, group: '台湾省网信办', name: '张若瑛', alias: '一旅', avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=zry', isFollow: '否', category: '舆情处置 / 错误表述', categories: ['舆情处置', '错误表述'], permission: '所属分组' },
             { id: 8, group: '台湾省网信办', name: '吴鑫', alias: '!', avatar: 'https://api.dicebear.com/7.x/bottts/svg?seed=wx', isFollow: '否', category: '舆情处置 / 错误表述', categories: ['舆情处置', '错误表述'], permission: '所属分组' },
-            { id: 9, group: '台湾省网信办', name: '谭星', alias: '&', avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=tx', isFollow: '是', category: '舆情处置 / 错误表述', categories: ['舆情处置', '错误表述'], permission: '所属分组' },
+            { id: 9, group: '台湾省��信办', name: '谭星', alias: '&', avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=tx', isFollow: '是', category: '舆情处置 / 错误表述', categories: ['舆情处置', '错误表述'], permission: '所属分组' },
             { id: 10, group: '台湾省网信办', name: '陈乾喜', alias: '工地少年与阵', avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=cqx', isFollow: '是', category: '舆情处置 / 错误表述', categories: ['舆情处置', '错误表述'], permission: '所属分组' }
           ]
         },
@@ -5127,7 +5128,7 @@
         { id: 17, name: '湘潭市公安局', status: '已停用', version: '试用', sentCount: 0, doneCount: 0, todoCount: 0, completeRate: 0.00, overdueRate: 0.00, activeUsers: 0, userActiveRate: 0.00 },
         { id: 6, name: '中共湘阴县委宣传部', status: '已启用', version: '试用', sentCount: 0, doneCount: 0, todoCount: 0, completeRate: 0.00, overdueRate: 0.00, activeUsers: 0, userActiveRate: 0.00 },
         { id: 4, name: '中共博尔塔拉蒙古自治州委员会网络安全和信息化委员会办公室', status: '已启用', version: '试用', sentCount: 0, doneCount: 0, todoCount: 0, completeRate: 0.00, overdueRate: 0.00, activeUsers: 0, userActiveRate: 0.00 },
-        { id: 12, name: '广西省网信办', status: '已停用', version: '试用', sentCount: 0, doneCount: 0, todoCount: 0, completeRate: 0.00, overdueRate: 0.00, activeUsers: 0, userActiveRate: 0.00 },
+        { id: 12, name: '广西省网信办', status: '已停用', version: '���用', sentCount: 0, doneCount: 0, todoCount: 0, completeRate: 0.00, overdueRate: 0.00, activeUsers: 0, userActiveRate: 0.00 },
         { id: 9, name: '禁用-OA数据同步内部系统测试使用111', status: '已停用', version: '正式', sentCount: 0, doneCount: 0, todoCount: 0, completeRate: 0.00, overdueRate: 0.00, activeUsers: 0, userActiveRate: 0.00 },
         { id: 7, name: '中国人民解放军河南省平顶山市卫东区人民武装部', status: '已启用', version: '试用', sentCount: 0, doneCount: 0, todoCount: 0, completeRate: 0.00, overdueRate: 0.00, activeUsers: 0, userActiveRate: 0.00 },
         { id: 105, name: '禁用-中国汽车工程研究院股份有限公司', status: '已启用', version: '正式', sentCount: 0, doneCount: 0, todoCount: 0, completeRate: 0.00, overdueRate: 0.00, activeUsers: 0, userActiveRate: 0.00 }
@@ -5150,7 +5151,7 @@
             { id: 'f_title', type: '单行文本', title: '舆情标题', required: '必填', placeholder: '请输入舆情标题/事件概述', defaultVal: '', help: '简明提炼涉事事件核心焦点与发生地点' },
             { id: 'f_time', type: '日期时间', title: '监测时间', required: '必填', placeholder: 'YYYY-MM-DD HH:mm:ss', defaultVal: '', help: '系统或巡查人员首次捕捉舆情的时间' },
             { id: 'f_channel', type: '单选下拉', title: '舆情来源渠道', required: '必填', placeholder: '请选择传播渠道平台', options: ['新浪微博', '抖音/快手短视频', '微信公众号/群聊', '小红书', '本地论坛/贴吧', '今日头条/门户新闻'], defaultVal: '新浪微博', help: '发酵主阵地渠道' },
-            { id: 'f_level', type: '单选下拉', title: '预警等级', required: '必填', placeholder: '请选择等级', options: ['一级（特别重大-红色）', '二级（重大-橙色）', '三级（较重-黄色）', '四级（一般-蓝色）'], defaultVal: '三级（较重-黄色）', help: '依据舆情扩散速度与烈度综合初判' },
+            { id: 'f_level', type: '单选下拉', title: '预警等级', required: '必填', placeholder: '请选择等��', options: ['一级（特别重大-红色）', '二级（重大-橙色）', '三级（较重-黄色）', '四级（一般-蓝色）'], defaultVal: '三级（较重-黄色）', help: '依据舆情扩散速度与烈度综合初判' },
             { id: 'f_url', type: '单行文本', title: '原帖链���/涉事账号', required: '必填', placeholder: 'https://... 或涉事主体ID', defaultVal: '', help: '发帖主页或具体涉案网民账号' },
             { id: 'f_content', type: '多行文本', title: '舆情主要内容与焦点', required: '必填', placeholder: '请详细阐述网民热议观点、负面情绪倾向及传播扩散现状...', defaultVal: '', help: '客观归纳事件起因、发展及舆论关注关键点' },
             { id: 'f_dept', type: '责任人员', title: '初判涉事责任单位', required: '必填', placeholder: '请选择或指定负责牵头处置的涉事单位/科室', defaultVal: '', help: '线索归属地或涉事行政主管部门' },
@@ -5331,7 +5332,7 @@
           category: '舆情处置',
           flowDirection: '下发',
           org: '台湾省网信办',
-          desc: '用于日常涉台网络舆情协同查证与处置回执。',
+          desc: '用于日常涉台网���舆情协同查证与处置回执。',
           req: '回执',
           name: '舆情处置-回执',
           createTime: '2026-06-01 10:35:40',
@@ -6623,7 +6624,7 @@
         syncStatsOrg(org);
       }
       closeModal();
-      showToast('已停用此机构应用');
+      showToast('已��用此机构应用');
       render();
     }
 
@@ -6929,7 +6930,7 @@
               </label>
               <select class="mt-input-text" id="tplWizardCat" onchange="currentTplDraft.category=this.value" style="width:100%;height:36px;border:1px solid #cbd5e1;border-radius:6px;padding:0 10px;font-size:13px;text-align:left;">
                 <option value="舆情处置" ${currentTplDraft.category==='舆情处置'?'selected':''}>舆情处置</option>
-                <option value="错误表述" ${currentTplDraft.category==='错误表述'?'selected':''}>错误表述</option>
+                <option value="错误表述" ${currentTplDraft.category==='错误���述'?'selected':''}>错误表述</option>
                 <option value="线索协查" ${currentTplDraft.category==='线索协查'?'selected':''}>线索协查</option>
                 <option value="网络安全" ${currentTplDraft.category==='网络安全'?'selected':''}>网络安全</option>
               </select>
