@@ -14,8 +14,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="stylesheet" href="/prototype.css" />
       </head>
       <body>
-        <Script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" strategy="beforeInteractive" />
-        <Script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" strategy="beforeInteractive" />
+        <Script src="/vendor/echarts.min.js" strategy="beforeInteractive" />
+        <Script src="/vendor/lucide-0.468.0.min.js" strategy="beforeInteractive" />
         {children}
       </body>
     </html>
